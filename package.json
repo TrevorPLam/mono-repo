@@ -1,0 +1,38 @@
+{
+  "name": "@repo/root",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Marketing firm monorepo root",
+  "packageManager": "pnpm@10.26.0",
+  "engines": {
+    "node": "22.x",
+    "pnpm": "10.x"
+  },
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:firm": "turbo dev --filter=site-firm",
+    "dev:platform": "turbo dev --filter=site-platform",
+    "dev:booking": "turbo dev --filter=app-booking",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "test:unit": "turbo test --filter=*",
+    "test:e2e": "turbo test:e2e",
+    "storybook": "turbo storybook",
+    "format": "turbo format",
+    "format:check": "turbo format:check",
+    "check": "pnpm lint && pnpm typecheck && pnpm test",
+    "db:generate": "turbo db:generate",
+    "db:migrate": "turbo db:migrate",
+    "tokens:build": "turbo tokens:build"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.7.0",
+    "eslint": "^9.0.0",
+    "@eslint/js": "^9.0.0",
+    "typescript-eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0"
+  }
+}

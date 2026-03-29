@@ -1,0 +1,43 @@
+{
+  "name": "@repo/env",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Environment variable validation and typed access",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./schema": {
+      "types": "./dist/schema.d.ts",
+      "import": "./dist/schema.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --max-warnings 0",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "tsup": {
+    "entry": {
+      "index": "src/index.ts",
+      "schema": "src/schema.ts"
+    },
+    "format": "esm",
+    "dts": true,
+    "clean": true,
+    "sourcemap": true
+  }
+}

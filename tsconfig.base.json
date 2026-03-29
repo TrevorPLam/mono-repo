@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@repo/*": ["./packages/*/src"],
+      "@repo/analytics": ["./packages/analytics/src"],
+      "@repo/auth": ["./packages/auth/src"],
+      "@repo/contracts": ["./packages/contracts/src"],
+      "@repo/db": ["./packages/db/src"],
+      "@repo/design-tokens": ["./packages/design-tokens/src"],
+      "@repo/env": ["./packages/env/src"],
+      "@repo/integrations-core": ["./packages/integrations-core/src"],
+      "@repo/observability": ["./packages/observability/src"],
+      "@repo/seo-core": ["./packages/seo-core/src"],
+      "@repo/seo-astro": ["./packages/seo-astro/src"],
+      "@repo/seo-next": ["./packages/seo-next/src"],
+      "@repo/testing": ["./packages/testing/src"],
+      "@repo/ui": ["./packages/ui/src"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

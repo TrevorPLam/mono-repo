@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.base.json",
+  "files": [],
+  "references": [
+    { "path": "./packages/analytics" },
+    { "path": "./packages/auth" },
+    { "path": "./packages/contracts" },
+    { "path": "./packages/db" },
+    { "path": "./packages/design-tokens" },
+    { "path": "./packages/env" },
+    { "path": "./packages/integrations-core" },
+    { "path": "./packages/observability" },
+    { "path": "./packages/seo-core" },
+    { "path": "./packages/seo-astro" },
+    { "path": "./packages/seo-next" },
+    { "path": "./packages/testing" },
+    { "path": "./packages/ui" },
+    { "path": "./apps/site-firm" },
+    { "path": "./apps/site-platform" },
+    { "path": "./apps/app-booking" }
+  ]
+}

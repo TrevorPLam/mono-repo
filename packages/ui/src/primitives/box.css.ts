@@ -1,0 +1,147 @@
+import { style } from '@vanilla-extract/css';
+import { tokens } from '../styles/tokens';
+
+export const boxBase = style({
+  boxSizing: 'border-box',
+});
+
+export const boxVariants = {
+  display: {
+    block: style({ display: 'block' }),
+    inlineBlock: style({ display: 'inline-block' }),
+    inline: style({ display: 'inline' }),
+    flex: style({ display: 'flex' }),
+    inlineFlex: style({ display: 'inline-flex' }),
+    grid: style({ display: 'grid' }),
+    inlineGrid: style({ display: 'inline-grid' }),
+    none: style({ display: 'none' }),
+  },
+  overflow: {
+    visible: style({ overflow: 'visible' }),
+    hidden: style({ overflow: 'hidden' }),
+    scroll: style({ overflow: 'scroll' }),
+    auto: style({ overflow: 'auto' }),
+  },
+  position: {
+    static: style({ position: 'static' }),
+    relative: style({ position: 'relative' }),
+    absolute: style({ position: 'absolute' }),
+    fixed: style({ position: 'fixed' }),
+    sticky: style({ position: 'sticky' }),
+  },
+};
+
+export const spacingStyles = {
+  p: {
+    xs: style({ padding: tokens.spacing.xs }),
+    sm: style({ padding: tokens.spacing.sm }),
+    md: style({ padding: tokens.spacing.md }),
+    lg: style({ padding: tokens.spacing.lg }),
+    xl: style({ padding: tokens.spacing.xl }),
+    '2xl': style({ padding: tokens.spacing['2xl'] }),
+  },
+  px: {
+    xs: style({ paddingLeft: tokens.spacing.xs, paddingRight: tokens.spacing.xs }),
+    sm: style({ paddingLeft: tokens.spacing.sm, paddingRight: tokens.spacing.sm }),
+    md: style({ paddingLeft: tokens.spacing.md, paddingRight: tokens.spacing.md }),
+    lg: style({ paddingLeft: tokens.spacing.lg, paddingRight: tokens.spacing.lg }),
+    xl: style({ paddingLeft: tokens.spacing.xl, paddingRight: tokens.spacing.xl }),
+    '2xl': style({ paddingLeft: tokens.spacing['2xl'], paddingRight: tokens.spacing['2xl'] }),
+  },
+  py: {
+    xs: style({ paddingTop: tokens.spacing.xs, paddingBottom: tokens.spacing.xs }),
+    sm: style({ paddingTop: tokens.spacing.sm, paddingBottom: tokens.spacing.sm }),
+    md: style({ paddingTop: tokens.spacing.md, paddingBottom: tokens.spacing.md }),
+    lg: style({ paddingTop: tokens.spacing.lg, paddingBottom: tokens.spacing.lg }),
+    xl: style({ paddingTop: tokens.spacing.xl, paddingBottom: tokens.spacing.xl }),
+    '2xl': style({ paddingTop: tokens.spacing['2xl'], paddingBottom: tokens.spacing['2xl'] }),
+  },
+  pt: {
+    xs: style({ paddingTop: tokens.spacing.xs }),
+    sm: style({ paddingTop: tokens.spacing.sm }),
+    md: style({ paddingTop: tokens.spacing.md }),
+    lg: style({ paddingTop: tokens.spacing.lg }),
+    xl: style({ paddingTop: tokens.spacing.xl }),
+    '2xl': style({ paddingTop: tokens.spacing['2xl'] }),
+  },
+  pr: {
+    xs: style({ paddingRight: tokens.spacing.xs }),
+    sm: style({ paddingRight: tokens.spacing.sm }),
+    md: style({ paddingRight: tokens.spacing.md }),
+    lg: style({ paddingRight: tokens.spacing.lg }),
+    xl: style({ paddingRight: tokens.spacing.xl }),
+    '2xl': style({ paddingRight: tokens.spacing['2xl'] }),
+  },
+  pb: {
+    xs: style({ paddingBottom: tokens.spacing.xs }),
+    sm: style({ paddingBottom: tokens.spacing.sm }),
+    md: style({ paddingBottom: tokens.spacing.md }),
+    lg: style({ paddingBottom: tokens.spacing.lg }),
+    xl: style({ paddingBottom: tokens.spacing.xl }),
+    '2xl': style({ paddingBottom: tokens.spacing['2xl'] }),
+  },
+  pl: {
+    xs: style({ paddingLeft: tokens.spacing.xs }),
+    sm: style({ paddingLeft: tokens.spacing.sm }),
+    md: style({ paddingLeft: tokens.spacing.md }),
+    lg: style({ paddingLeft: tokens.spacing.lg }),
+    xl: style({ paddingLeft: tokens.spacing.xl }),
+    '2xl': style({ paddingLeft: tokens.spacing['2xl'] }),
+  },
+  m: {
+    xs: style({ margin: tokens.spacing.xs }),
+    sm: style({ margin: tokens.spacing.sm }),
+    md: style({ margin: tokens.spacing.md }),
+    lg: style({ margin: tokens.spacing.lg }),
+    xl: style({ margin: tokens.spacing.xl }),
+    '2xl': style({ margin: tokens.spacing['2xl'] }),
+  },
+  mx: {
+    xs: style({ marginLeft: tokens.spacing.xs, marginRight: tokens.spacing.xs }),
+    sm: style({ marginLeft: tokens.spacing.sm, marginRight: tokens.spacing.sm }),
+    md: style({ marginLeft: tokens.spacing.md, marginRight: tokens.spacing.md }),
+    lg: style({ marginLeft: tokens.spacing.lg, marginRight: tokens.spacing.lg }),
+    xl: style({ marginLeft: tokens.spacing.xl, marginRight: tokens.spacing.xl }),
+    '2xl': style({ marginLeft: tokens.spacing['2xl'], marginRight: tokens.spacing['2xl'] }),
+  },
+  my: {
+    xs: style({ marginTop: tokens.spacing.xs, marginBottom: tokens.spacing.xs }),
+    sm: style({ marginTop: tokens.spacing.sm, marginBottom: tokens.spacing.sm }),
+    md: style({ marginTop: tokens.spacing.md, marginBottom: tokens.spacing.md }),
+    lg: style({ marginTop: tokens.spacing.lg, marginBottom: tokens.spacing.lg }),
+    xl: style({ marginTop: tokens.spacing.xl, marginBottom: tokens.spacing.xl }),
+    '2xl': style({ marginTop: tokens.spacing['2xl'], marginBottom: tokens.spacing['2xl'] }),
+  },
+  mt: {
+    xs: style({ marginTop: tokens.spacing.xs }),
+    sm: style({ marginTop: tokens.spacing.sm }),
+    md: style({ marginTop: tokens.spacing.md }),
+    lg: style({ marginTop: tokens.spacing.lg }),
+    xl: style({ marginTop: tokens.spacing.xl }),
+    '2xl': style({ marginTop: tokens.spacing['2xl'] }),
+  },
+  mr: {
+    xs: style({ marginRight: tokens.spacing.xs }),
+    sm: style({ marginRight: tokens.spacing.sm }),
+    md: style({ marginRight: tokens.spacing.md }),
+    lg: style({ marginRight: tokens.spacing.lg }),
+    xl: style({ marginRight: tokens.spacing.xl }),
+    '2xl': style({ marginRight: tokens.spacing['2xl'] }),
+  },
+  mb: {
+    xs: style({ marginBottom: tokens.spacing.xs }),
+    sm: style({ marginBottom: tokens.spacing.sm }),
+    md: style({ marginBottom: tokens.spacing.md }),
+    lg: style({ marginBottom: tokens.spacing.lg }),
+    xl: style({ marginBottom: tokens.spacing.xl }),
+    '2xl': style({ marginBottom: tokens.spacing['2xl'] }),
+  },
+  ml: {
+    xs: style({ marginLeft: tokens.spacing.xs }),
+    sm: style({ marginLeft: tokens.spacing.sm }),
+    md: style({ marginLeft: tokens.spacing.md }),
+    lg: style({ marginLeft: tokens.spacing.lg }),
+    xl: style({ marginLeft: tokens.spacing.xl }),
+    '2xl': style({ marginLeft: tokens.spacing['2xl'] }),
+  },
+};
