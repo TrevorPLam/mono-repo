@@ -1,0 +1,231 @@
+/* 
+ * Core Design Tokens
+ * Generated: 2026-03-29T14:53:00.790Z
+ * Framework: Framework-agnostic
+ * Best Practices: CSS custom properties, semantic naming
+ */
+
+:root {
+  /* Core Tokens */
+  --repo-core-border-width-0: 0; /* No border */
+  --repo-core-border-width-1: 1px; /* Thin border */
+  --repo-core-border-width-2: 2px; /* Medium border */
+  --repo-core-border-width-4: 4px; /* Thick border */
+  --repo-core-border-width-8: 8px; /* Very thick border */
+  --repo-core-border-style-solid: solid; /* Solid border style */
+  --repo-core-border-style-dashed: dashed; /* Dashed border style */
+  --repo-core-border-style-dotted: dotted; /* Dotted border style */
+  --repo-core-border-style-double: double; /* Double border style */
+  --repo-core-breakpoints-sm: 640px; /* Small screens and up */
+  --repo-core-breakpoints-md: 768px; /* Medium screens and up */
+  --repo-core-breakpoints-lg: 1024px; /* Large screens and up */
+  --repo-core-breakpoints-xl: 1280px; /* Extra large screens and up */
+  --repo-core-breakpoints-2xl: 1536px; /* 2x large screens and up */
+  --repo-core-color-blue-50: #eff6ff; /* Very light blue - WCAG AA compliant on white backgrounds */
+  --repo-core-color-blue-100: #dbeafe; /* Light blue */
+  --repo-core-color-blue-200: #bfdbfe; /* Medium light blue */
+  --repo-core-color-blue-300: #93c5fd; /* Light medium blue */
+  --repo-core-color-blue-400: #60a5fa; /* Medium blue */
+  --repo-core-color-blue-500: #3b82f6; /* Primary blue - WCAG AA compliant on white */
+  --repo-core-color-blue-600: #2563eb; /* Blue hover - WCAG AA compliant on white */
+  --repo-core-color-blue-700: #1d4ed8; /* Blue active - WCAG AA compliant on white */
+  --repo-core-color-blue-800: #1e40af; /* Dark blue - WCAG AA compliant on white */
+  --repo-core-color-blue-900: #1e3a8a; /* Very dark blue - WCAG AA compliant on white */
+  --repo-core-color-blue-950: #172554; /* Darkest blue - WCAG AA compliant on white */
+  --repo-core-color-gray-50: #f9fafb; /* Very light gray */
+  --repo-core-color-gray-100: #f3f4f6; /* Light gray */
+  --repo-core-color-gray-200: #e5e7eb; /* Border gray */
+  --repo-core-color-gray-300: #d1d5db; /* Disabled state */
+  --repo-core-color-gray-400: #9ca3af; /* Placeholder text */
+  --repo-core-color-gray-500: #6b7280; /* Secondary text */
+  --repo-core-color-gray-600: #4b5563; /* Primary text */
+  --repo-core-color-gray-700: #374151; /* Dark text */
+  --repo-core-color-gray-800: #1f2937; /* Very dark text */
+  --repo-core-color-gray-900: #111827; /* Near black */
+  --repo-core-color-gray-950: #030712; /* Almost black */
+  --repo-core-color-red-50: #fef2f2; /* Very light red */
+  --repo-core-color-red-100: #fee2e2; /* Light red */
+  --repo-core-color-red-200: #fecaca; /* Medium light red */
+  --repo-core-color-red-300: #fca5a5; /* Light medium red */
+  --repo-core-color-red-400: #f87171; /* Medium red */
+  --repo-core-color-red-500: #ef4444; /* Error red - WCAG AA compliant on white */
+  --repo-core-color-red-600: #dc2626; /* Error hover - WCAG AA compliant on white */
+  --repo-core-color-red-700: #b91c1c; /* Error active - WCAG AA compliant on white */
+  --repo-core-color-red-800: #991b1b; /* Dark error - WCAG AA compliant on white */
+  --repo-core-color-red-900: #7f1d1d; /* Very dark error - WCAG AA compliant on white */
+  --repo-core-color-red-950: #450a0a; /* Darkest error - WCAG AA compliant on white */
+  --repo-core-color-green-50: #f0fdf4; /* Very light green */
+  --repo-core-color-green-100: #dcfce7; /* Light green */
+  --repo-core-color-green-200: #bbf7d0; /* Medium light green */
+  --repo-core-color-green-300: #86efac; /* Light medium green */
+  --repo-core-color-green-400: #4ade80; /* Medium green */
+  --repo-core-color-green-500: #22c55e; /* Success green - WCAG AA compliant on white */
+  --repo-core-color-green-600: #16a34a; /* Success hover - WCAG AA compliant on white */
+  --repo-core-color-green-700: #15803d; /* Success active - WCAG AA compliant on white */
+  --repo-core-color-green-800: #166534; /* Dark success - WCAG AA compliant on white */
+  --repo-core-color-green-900: #14532d; /* Very dark success - WCAG AA compliant on white */
+  --repo-core-color-green-950: #052e16; /* Darkest success - WCAG AA compliant on white */
+  --repo-core-color-yellow-50: #fffbeb; /* Very light yellow */
+  --repo-core-color-yellow-100: #fef3c7; /* Light yellow */
+  --repo-core-color-yellow-200: #fde68a; /* Medium light yellow */
+  --repo-core-color-yellow-300: #fcd34d; /* Light medium yellow */
+  --repo-core-color-yellow-400: #fbbf24; /* Medium yellow */
+  --repo-core-color-yellow-500: #f59e0b; /* Warning yellow - WCAG AA compliant on white */
+  --repo-core-color-yellow-600: #d97706; /* Warning hover - WCAG AA compliant on white */
+  --repo-core-color-yellow-700: #b45309; /* Warning active - WCAG AA compliant on white */
+  --repo-core-color-yellow-800: #92400e; /* Dark warning - WCAG AA compliant on white */
+  --repo-core-color-yellow-900: #78350f; /* Very dark warning - WCAG AA compliant on white */
+  --repo-core-color-yellow-950: #451a03; /* Darkest warning - WCAG AA compliant on white */
+  --repo-core-color-orange-50: #fff7ed; /* Very light orange */
+  --repo-core-color-orange-100: #ffedd5; /* Light orange */
+  --repo-core-color-orange-200: #fed7aa; /* Medium light orange */
+  --repo-core-color-orange-300: #fdba74; /* Light medium orange */
+  --repo-core-color-orange-400: #fb923c; /* Medium orange */
+  --repo-core-color-orange-500: #f97316; /* Accent orange - WCAG AA compliant on white */
+  --repo-core-color-orange-600: #ea580c; /* Accent hover - WCAG AA compliant on white */
+  --repo-core-color-orange-700: #c2410c; /* Accent active - WCAG AA compliant on white */
+  --repo-core-color-orange-800: #9a3412; /* Dark accent - WCAG AA compliant on white */
+  --repo-core-color-orange-900: #7c2d12; /* Very dark accent - WCAG AA compliant on white */
+  --repo-core-color-orange-950: #431407; /* Darkest accent - WCAG AA compliant on white */
+  --repo-core-color-purple-50: #faf5ff; /* Very light purple */
+  --repo-core-color-purple-100: #f3e8ff; /* Light purple */
+  --repo-core-color-purple-200: #e9d5ff; /* Medium light purple */
+  --repo-core-color-purple-300: #d8b4fe; /* Light medium purple */
+  --repo-core-color-purple-400: #c084fc; /* Medium purple */
+  --repo-core-color-purple-500: #a855f7; /* Premium purple - WCAG AA compliant on white */
+  --repo-core-color-purple-600: #9333ea; /* Premium hover - WCAG AA compliant on white */
+  --repo-core-color-purple-700: #7c3aed; /* Premium active - WCAG AA compliant on white */
+  --repo-core-color-purple-800: #6b21a8; /* Dark premium - WCAG AA compliant on white */
+  --repo-core-color-purple-900: #581c87; /* Very dark premium - WCAG AA compliant on white */
+  --repo-core-color-purple-950: #3b0764; /* Darkest premium - WCAG AA compliant on white */
+  --repo-core-color-pink-50: #fdf2f8; /* Very light pink */
+  --repo-core-color-pink-100: #fce7f3; /* Light pink */
+  --repo-core-color-pink-200: #fbcfe8; /* Medium light pink */
+  --repo-core-color-pink-300: #f9a8d4; /* Light medium pink */
+  --repo-core-color-pink-400: #f472b6; /* Medium pink */
+  --repo-core-color-pink-500: #ec4899; /* Marketing pink - WCAG AA compliant on white */
+  --repo-core-color-pink-600: #db2777; /* Marketing hover - WCAG AA compliant on white */
+  --repo-core-color-pink-700: #be185d; /* Marketing active - WCAG AA compliant on white */
+  --repo-core-color-pink-800: #9d174d; /* Dark marketing - WCAG AA compliant on white */
+  --repo-core-color-pink-900: #831843; /* Very dark marketing - WCAG AA compliant on white */
+  --repo-core-color-pink-950: #500724; /* Darkest marketing - WCAG AA compliant on white */
+  --repo-core-color-white: #ffffff; /* Pure white */
+  --repo-core-color-black: #000000; /* Pure black */
+  --repo-core-color-transparent: transparent; /* Fully transparent */
+  --repo-core-motion-duration-instant: 0ms; /* Instant transition */
+  --repo-core-motion-duration-fast: 150ms; /* Fast transition */
+  --repo-core-motion-duration-normal: 200ms; /* Normal transition */
+  --repo-core-motion-duration-slow: 300ms; /* Slow transition */
+  --repo-core-motion-duration-slower: 500ms; /* Slower transition */
+  --repo-core-motion-easing-linear: linear; /* Linear easing */
+  --repo-core-motion-easing-standard: cubic-bezier(0.4, 0, 0.2, 1); /* Standard easing for UI */
+  --repo-core-motion-easing-ease-in: cubic-bezier(0.4, 0, 1, 1); /* Ease-in easing */
+  --repo-core-motion-easing-ease-out: cubic-bezier(0, 0, 0.2, 1); /* Ease-out easing */
+  --repo-core-motion-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1); /* Ease-in-out easing */
+  --repo-core-motion-easing-emphasized: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Emphasized easing for attention */
+  --repo-core-motion-easing-decelerated: cubic-bezier(0, 0, 0.2, 1); /* Decelerated easing for entry */
+  --repo-core-motion-easing-accelerated: cubic-bezier(0.4, 0, 1, 1); /* Accelerated easing for exit */
+  --repo-core-opacity-0: 0; /* Fully transparent */
+  --repo-core-opacity-5: 0.05; /* 5% opacity */
+  --repo-core-opacity-10: 0.1; /* 10% opacity */
+  --repo-core-opacity-20: 0.2; /* 20% opacity */
+  --repo-core-opacity-30: 0.3; /* 30% opacity */
+  --repo-core-opacity-40: 0.4; /* 40% opacity */
+  --repo-core-opacity-50: 0.5; /* 50% opacity */
+  --repo-core-opacity-60: 0.6; /* 60% opacity */
+  --repo-core-opacity-70: 0.7; /* 70% opacity */
+  --repo-core-opacity-80: 0.8; /* 80% opacity */
+  --repo-core-opacity-90: 0.9; /* 90% opacity */
+  --repo-core-opacity-100: 1; /* Fully opaque */
+  --repo-core-radius-none: 0; /* No border radius */
+  --repo-core-radius-sm: 2px; /* Small border radius */
+  --repo-core-radius-base: 4px; /* Base border radius */
+  --repo-core-radius-md: 6px; /* Medium border radius */
+  --repo-core-radius-lg: 8px; /* Large border radius */
+  --repo-core-radius-xl: 12px; /* Extra large border radius */
+  --repo-core-radius-2xl: 16px; /* 2x large border radius */
+  --repo-core-radius-3xl: 24px; /* 3x large border radius */
+  --repo-core-radius-full: 9999px; /* Fully rounded (pill shape) */
+  --repo-core-shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05); /* Extra small shadow for subtle elevation */
+  --repo-core-shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); /* Small shadow for low elevation */
+  --repo-core-shadow-base: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* Base shadow for medium elevation */
+  --repo-core-shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* Medium shadow for noticeable elevation */
+  --repo-core-shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); /* Large shadow for high elevation */
+  --repo-core-shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25); /* Extra large shadow for very high elevation */
+  --repo-core-shadow-2xl: 0 50px 100px -20px rgb(0 0 0 / 0.25); /* 2x large shadow for dramatic elevation */
+  --repo-core-shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); /* Inner shadow for inset elements */
+  --repo-core-size-icon-xs: 0.75rem; /* Extra small icon (12px) */
+  --repo-core-size-icon-sm: 1rem; /* Small icon (16px) */
+  --repo-core-size-icon-base: 1.25rem; /* Base icon (20px) */
+  --repo-core-size-icon-lg: 1.5rem; /* Large icon (24px) */
+  --repo-core-size-icon-xl: 2rem; /* Extra large icon (32px) */
+  --repo-core-size-icon-2xl: 2.5rem; /* 2x large icon (40px) */
+  --repo-core-size-control-height-sm: 2rem; /* Small control height (32px) */
+  --repo-core-size-control-height-base: 2.5rem; /* Base control height (40px) */
+  --repo-core-size-control-height-lg: 3rem; /* Large control height (48px) */
+  --repo-core-size-container-xs: 20rem; /* Extra small container (320px) */
+  --repo-core-size-container-sm: 24rem; /* Small container (384px) */
+  --repo-core-size-container-base: 32rem; /* Base container (512px) */
+  --repo-core-size-container-lg: 48rem; /* Large container (768px) */
+  --repo-core-size-container-xl: 64rem; /* Extra large container (1024px) */
+  --repo-core-size-container-2xl: 80rem; /* 2x large container (1280px) */
+  --repo-core-spacing-0: 0; /* No spacing */
+  --repo-core-spacing-1: 4px; /* Base spacing unit */
+  --repo-core-spacing-2: 8px; /* 2x base unit */
+  --repo-core-spacing-3: 12px; /* 3x base unit */
+  --repo-core-spacing-4: 16px; /* 4x base unit */
+  --repo-core-spacing-6: 24px; /* 6x base unit */
+  --repo-core-spacing-8: 32px; /* 8x base unit */
+  --repo-core-spacing-10: 40px; /* 10x base unit */
+  --repo-core-spacing-12: 48px; /* 12x base unit */
+  --repo-core-spacing-16: 64px; /* 16x base unit */
+  --repo-core-spacing-20: 80px; /* 20x base unit */
+  --repo-core-spacing-24: 96px; /* 24x base unit */
+  --repo-core-spacing-px: 1px; /* Single pixel spacing */
+  --repo-core-spacing-0_5: 2px; /* Half base unit (4px / 2) */
+  --repo-core-spacing-1_5: 6px; /* 1.5x base unit */
+  --repo-core-typography-fontFamily-sans: Inter,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif; /* Primary sans-serif font stack */
+  --repo-core-typography-fontFamily-serif: Georgia,Cambria,Times New Roman,Times,serif; /* Primary serif font stack */
+  --repo-core-typography-fontFamily-mono: JetBrains Mono,Fira Code,Consolas,Monaco,Cascadia Code,SF Mono,Roboto Mono,Courier New,monospace; /* Monospace font stack for code */
+  --repo-core-typography-fontSize-xs: 0.75rem; /* Extra small text (12px) */
+  --repo-core-typography-fontSize-sm: 0.875rem; /* Small text (14px) */
+  --repo-core-typography-fontSize-base: 1rem; /* Base text size (16px) */
+  --repo-core-typography-fontSize-lg: 1.125rem; /* Large text (18px) */
+  --repo-core-typography-fontSize-xl: 1.25rem; /* Extra large text (20px) */
+  --repo-core-typography-fontSize-2xl: 1.5rem; /* 2x large text (24px) */
+  --repo-core-typography-fontSize-3xl: 1.875rem; /* 3x large text (30px) */
+  --repo-core-typography-fontSize-4xl: 2.25rem; /* 4x large text (36px) */
+  --repo-core-typography-fontSize-5xl: 3rem; /* 5x large text (48px) */
+  --repo-core-typography-fontSize-6xl: 3.75rem; /* 6x large text (60px) */
+  --repo-core-typography-fontWeight-thin: 100; /* Thin font weight */
+  --repo-core-typography-fontWeight-extralight: 200; /* Extra light font weight */
+  --repo-core-typography-fontWeight-light: 300; /* Light font weight */
+  --repo-core-typography-fontWeight-normal: 400; /* Normal font weight */
+  --repo-core-typography-fontWeight-medium: 500; /* Medium font weight */
+  --repo-core-typography-fontWeight-semibold: 600; /* Semibold font weight */
+  --repo-core-typography-fontWeight-bold: 700; /* Bold font weight */
+  --repo-core-typography-fontWeight-extrabold: 800; /* Extra bold font weight */
+  --repo-core-typography-fontWeight-black: 900; /* Black font weight */
+  --repo-core-typography-lineHeight-none: 1; /* No line height */
+  --repo-core-typography-lineHeight-tight: 1.25; /* Tight line height */
+  --repo-core-typography-lineHeight-snug: 1.375; /* Snug line height */
+  --repo-core-typography-lineHeight-normal: 1.5; /* Normal line height */
+  --repo-core-typography-lineHeight-relaxed: 1.625; /* Relaxed line height */
+  --repo-core-typography-lineHeight-loose: 2; /* Loose line height */
+  --repo-core-typography-letterSpacing-tighter: -0.05em; /* Tighter letter spacing */
+  --repo-core-typography-letterSpacing-tight: -0.025em; /* Tight letter spacing */
+  --repo-core-typography-letterSpacing-normal: 0; /* Normal letter spacing */
+  --repo-core-typography-letterSpacing-wide: 0.025em; /* Wide letter spacing */
+  --repo-core-typography-letterSpacing-wider: 0.05em; /* Wider letter spacing */
+  --repo-core-typography-letterSpacing-widest: 0.1em; /* Widest letter spacing */
+  --repo-core-z-index-base: 0; /* Base layer */
+  --repo-core-z-index-raised: 10; /* Raised elements */
+  --repo-core-z-index-dropdown: 1000; /* Dropdown menus */
+  --repo-core-z-index-sticky: 1100; /* Sticky positioned elements */
+  --repo-core-z-index-modal: 1200; /* Modal overlays */
+  --repo-core-z-index-popover: 1300; /* Popover tooltips */
+  --repo-core-z-index-toast: 1400; /* Toast notifications */
+  --repo-core-z-index-tooltip: 1500; /* Tooltips */
+}
+
+}

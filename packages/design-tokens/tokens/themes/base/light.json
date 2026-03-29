@@ -1,0 +1,58 @@
+{
+  "$description": "Light-mode semantic overlay. Base theme for marketing firm websites.",
+  "surface": {
+    "canvas": {
+      "primary": { "$value": "{core.color.white}", "$type": "color", "$description": "Main canvas background in light mode" },
+      "secondary": { "$value": "{core.color.gray.50}", "$type": "color", "$description": "Secondary canvas background in light mode" },
+      "tertiary": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Tertiary canvas background in light mode" }
+    },
+    "subtle": {
+      "primary": { "$value": "{core.color.gray.50}", "$type": "color", "$description": "Subtle background in light mode" },
+      "secondary": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Secondary subtle background in light mode" },
+      "accent": { "$value": "{core.color.blue.50}", "$type": "color", "$description": "Accent subtle background in light mode" }
+    },
+    "elevated": {
+      "primary": { "$value": "{core.color.white}", "$type": "color", "$description": "Elevated surface in light mode" },
+      "secondary": { "$value": "{core.color.gray.50}", "$type": "color", "$description": "Secondary elevated surface in light mode" },
+      "overlay": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Overlay surface in light mode" }
+    }
+  },
+  "text": {
+    "primary": { "$value": "{core.color.gray.900}", "$type": "color", "$description": "Primary text in light mode" },
+    "secondary": { "$value": "{core.color.gray.500}", "$type": "color", "$description": "Secondary text in light mode" },
+    "tertiary": { "$value": "{core.color.gray.400}", "$type": "color", "$description": "Tertiary text in light mode" },
+    "muted": { "$value": "{core.color.gray.400}", "$type": "color", "$description": "Muted text in light mode" },
+    "subtle": { "$value": "{core.color.gray.600}", "$type": "color", "$description": "Subtle text in light mode" }
+  },
+  "border": {
+    "primary": { "$value": "{core.color.gray.200}", "$type": "color", "$description": "Primary border in light mode" },
+    "secondary": { "$value": "{core.color.gray.300}", "$type": "color", "$description": "Secondary border in light mode" },
+    "tertiary": { "$value": "{core.color.gray.300}", "$type": "color", "$description": "Tertiary border in light mode" },
+    "subtle": { "$value": "{core.color.gray.200}", "$type": "color", "$description": "Subtle border in light mode" },
+    "strong": { "$value": "{core.color.gray.400}", "$type": "color", "$description": "Strong border in light mode" }
+  },
+  "icon": {
+    "primary": { "$value": "{semantic.text.primary}", "$type": "color", "$description": "Primary icon in light mode" },
+    "secondary": { "$value": "{semantic.text.secondary}", "$type": "color", "$description": "Secondary icon in light mode" },
+    "muted": { "$value": "{semantic.text.muted}", "$type": "color", "$description": "Muted icon in light mode" },
+    "subtle": { "$value": "{semantic.text.subtle}", "$type": "color", "$description": "Subtle icon in light mode" }
+  },
+  "focus": {
+    "ring": {
+      "color": { "$value": "{core.color.blue.500}", "$type": "color", "$description": "Focus ring color in light mode" }
+    },
+    "outline": {
+      "color": { "$value": "{core.color.blue.500}", "$type": "color", "$description": "Focus outline color in light mode" }
+    },
+    "visible": {
+      "color": { "$value": "{core.color.blue.500}", "$type": "color", "$description": "Visible focus color in light mode" },
+      "background": { "$value": "{core.color.blue.50}", "$type": "color", "$description": "Visible focus background in light mode" }
+    }
+  },
+  "interactive": {
+    "hover": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Interactive hover state in light mode" },
+    "active": { "$value": "{core.color.gray.200}", "$type": "color", "$description": "Interactive active state in light mode" },
+    "focus": { "$value": "{core.color.blue.100}", "$type": "color", "$description": "Interactive focus state in light mode" },
+    "selected": { "$value": "{core.color.blue.100}", "$type": "color", "$description": "Interactive selected state in light mode" }
+  }
+}

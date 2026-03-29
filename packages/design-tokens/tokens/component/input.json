@@ -1,0 +1,55 @@
+{
+  "$description": "Shared input/field contract tokens. System-level input component specifications.",
+  "height": {
+    "sm": { "$value": "{core.size.control.height.sm}", "$type": "dimension", "$description": "Small input height" },
+    "base": { "$value": "{core.size.control.height.base}", "$type": "dimension", "$description": "Base input height" },
+    "lg": { "$value": "{core.size.control.height.lg}", "$type": "dimension", "$description": "Large input height" }
+  },
+  "padding": {
+    "sm": {
+      "horizontal": { "$value": "{core.spacing.3}", "$type": "dimension", "$description": "Small input horizontal padding" },
+      "vertical": { "$value": "{core.spacing.1}", "$type": "dimension", "$description": "Small input vertical padding" }
+    },
+    "base": {
+      "horizontal": { "$value": "{core.spacing.3}", "$type": "dimension", "$description": "Base input horizontal padding" },
+      "vertical": { "$value": "{core.spacing.2}", "$type": "dimension", "$description": "Base input vertical padding" }
+    },
+    "lg": {
+      "horizontal": { "$value": "{core.spacing.4}", "$type": "dimension", "$description": "Large input horizontal padding" },
+      "vertical": { "$value": "{core.spacing.2_5}", "$type": "dimension", "$description": "Large input vertical padding" }
+    }
+  },
+  "radius": {
+    "sm": { "$value": "{core.radius.base}", "$type": "dimension", "$description": "Small input border radius" },
+    "base": { "$value": "{core.radius.base}", "$type": "dimension", "$description": "Base input border radius" },
+    "lg": { "$value": "{core.radius.md}", "$type": "dimension", "$description": "Large input border radius" }
+  },
+  "border": {
+    "width": {
+      "sm": { "$value": "{core.border.width.1}", "$type": "strokeWidth", "$description": "Small input border width" },
+      "base": { "$value": "{core.border.width.1}", "$type": "strokeWidth", "$description": "Base input border width" },
+      "lg": { "$value": "{core.border.width.1}", "$type": "strokeWidth", "$description": "Large input border width" }
+    }
+  },
+  "focus": {
+    "ring": {
+      "color": { "$value": "{semantic.focus.ring.color}", "$type": "color", "$description": "Input focus ring color" },
+      "width": { "$value": "{semantic.focus.ring.width}", "$type": "strokeWidth", "$description": "Input focus ring width" },
+      "offset": { "$value": "{semantic.focus.ring.offset}", "$type": "dimension", "$description": "Input focus ring offset" }
+    },
+    "outline": {
+      "color": { "$value": "{semantic.focus.outline.color}", "$type": "color", "$description": "Input focus outline color" },
+      "width": { "$value": "{semantic.focus.outline.width}", "$type": "strokeWidth", "$description": "Input focus outline width" },
+      "style": { "$value": "{semantic.focus.outline.style}", "$type": "strokeStyle", "$description": "Input focus outline style" }
+    }
+  },
+  "shadow": {
+    "resting": { "$value": "{semantic.elevation.resting}", "$type": "shadow", "$description": "Input resting elevation" },
+    "focus": { "$value": "{semantic.elevation.interactive.focus}", "$type": "shadow", "$description": "Input focus elevation" },
+    "error": { "$value": "{semantic.elevation.resting}", "$type": "shadow", "$description": "Input error elevation" }
+  },
+  "transition": {
+    "duration": { "$value": "{semantic.motion.standard.duration}", "$type": "duration", "$description": "Input transition duration" },
+    "easing": { "$value": "{semantic.motion.standard.easing}", "$type": "cubicBezier", "$description": "Input transition easing" }
+  }
+}

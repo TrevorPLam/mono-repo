@@ -1,0 +1,37 @@
+{
+  "$description": "Semantic text colors. Maps primitive colors to meaningful text hierarchies.",
+  "primary": { "$value": "{core.color.gray.900}", "$type": "color", "$description": "Primary text color" },
+  "secondary": { "$value": "{core.color.gray.600}", "$type": "color", "$description": "Secondary text color" },
+  "tertiary": { "$value": "{core.color.gray.500}", "$type": "color", "$description": "Tertiary text color" },
+  "muted": { "$value": "{core.color.gray.400}", "$type": "color", "$description": "Muted text color" },
+  "subtle": { "$value": "{core.color.gray.300}", "$type": "color", "$description": "Subtle text color" },
+  "inverse": {
+    "primary": { "$value": "{core.color.white}", "$type": "color", "$description": "Primary inverse text color" },
+    "secondary": { "$value": "{core.color.gray.200}", "$type": "color", "$description": "Secondary inverse text color" },
+    "tertiary": { "$value": "{core.color.gray.300}", "$type": "color", "$description": "Tertiary inverse text color" }
+  },
+  "interactive": {
+    "primary": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Primary interactive text" },
+    "primaryHover": { "$value": "{semantic.color.interactive.primaryHover}", "$type": "color", "$description": "Primary interactive hover text" },
+    "primaryActive": { "$value": "{semantic.color.interactive.primaryActive}", "$type": "color", "$description": "Primary interactive active text" },
+    "secondary": { "$value": "{semantic.color.interactive.secondary}", "$type": "color", "$description": "Secondary interactive text" },
+    "secondaryHover": { "$value": "{semantic.color.interactive.secondaryHover}", "$type": "color", "$description": "Secondary interactive hover text" },
+    "secondaryActive": { "$value": "{semantic.color.interactive.secondaryActive}", "$type": "color", "$description": "Secondary interactive active text" }
+  },
+  "link": {
+    "primary": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Primary link color" },
+    "visited": { "$value": "{core.color.purple.600}", "$type": "color", "$description": "Visited link color" },
+    "hover": { "$value": "{semantic.color.interactive.primaryHover}", "$type": "color", "$description": "Link hover color" }
+  },
+  "status": {
+    "success": { "$value": "{semantic.color.success.dark}", "$type": "color", "$description": "Success text color" },
+    "warning": { "$value": "{semantic.color.warning.dark}", "$type": "color", "$description": "Warning text color" },
+    "danger": { "$value": "{semantic.color.danger.dark}", "$type": "color", "$description": "Danger text color" },
+    "info": { "$value": "{semantic.color.info.dark}", "$type": "color", "$description": "Info text color" }
+  },
+  "accent": {
+    "primary": { "$value": "{semantic.color.accent.primary}", "$type": "color", "$description": "Primary accent text" },
+    "secondary": { "$value": "{semantic.color.accent.secondary}", "$type": "color", "$description": "Secondary accent text" },
+    "tertiary": { "$value": "{semantic.color.accent.tertiary}", "$type": "color", "$description": "Tertiary accent text" }
+  }
+}

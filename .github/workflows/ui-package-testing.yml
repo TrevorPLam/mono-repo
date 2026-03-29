@@ -1,0 +1,141 @@
+name: UI Package Testing
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'packages/ui/**'
+      - 'packages/design-tokens/**'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'packages/ui/**'
+      - 'packages/design-tokens/**'
+
+jobs:
+  test-ui-package:
+    name: Test UI Package
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+        
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+        
+    - name: Install dependencies
+      run: |
+        pnpm install --frozen-lockfile
+        
+    - name: Build design-tokens
+      run: |
+        cd packages/design-tokens
+        pnpm build
+        
+    - name: Type check UI package
+      run: |
+        cd packages/ui
+        pnpm typecheck
+        
+    - name: Lint UI package
+      run: |
+        cd packages/ui
+        pnpm lint
+        
+    - name: Run unit tests
+      run: |
+        cd packages/ui
+        pnpm test
+        
+    - name: Run tests with coverage
+      run: |
+        cd packages/ui
+        pnpm test:coverage
+        
+    - name: Upload coverage reports
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./packages/ui/coverage/lcov.info
+        flags: ui-package
+        name: ui-package-coverage
+        
+    - name: Build UI package
+      run: |
+        cd packages/ui
+        pnpm build
+        
+    - name: Run accessibility tests
+      run: |
+        cd packages/ui
+        pnpm test test/accessibility
+        
+    - name: Run integration tests
+      run: |
+        cd packages/ui
+        pnpm test test/integration
+        
+    - name: Check test coverage threshold
+      run: |
+        cd packages/ui
+        # Check if coverage meets 80% threshold
+        COVERAGE=$(pnpm test:coverage --reporter=json | jq '.total.lines.pct')
+        if (( $(echo "$COVERAGE < 80" | bc -l) )); then
+          echo "Test coverage ${COVERAGE}% is below 80% threshold"
+          exit 1
+        fi
+        echo "Test coverage ${COVERAGE}% meets 80% threshold"
+
+  visual-regression:
+    name: Visual Regression Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'pnpm'
+        
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+        
+    - name: Install dependencies
+      run: |
+        pnpm install --frozen-lockfile
+        
+    - name: Build design-tokens
+      run: |
+        cd packages/design-tokens
+        pnpm build
+        
+    - name: Build Storybook
+      run: |
+        cd packages/ui
+        pnpm build-storybook
+        
+    - name: Run Chromatic
+      run: |
+        cd packages/ui
+        pnpm chromatic:ci
+      env:
+        CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}

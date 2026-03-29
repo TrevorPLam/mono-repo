@@ -10,58 +10,68 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./tokens": {
-      "types": "./dist/tokens.d.ts",
-      "import": "./dist/tokens.js"
-    },
-    "./themes": {
-      "types": "./dist/themes.d.ts",
-      "import": "./dist/themes.js"
-    },
     "./css": {
       "types": "./dist/css.d.ts",
       "import": "./dist/css.js"
     },
-    "./schema": {
-      "types": "./dist/schema.d.ts",
-      "import": "./dist/schema.js"
-    }
+    "./css/index": {
+      "types": "./dist/css/generator.d.ts",
+      "import": "./dist/css/generator.js"
+    },
+    "./ts": {
+      "types": "./dist/ts/index.d.ts",
+      "import": "./dist/ts/index.js"
+    },
+    "./vanilla-extract": {
+      "types": "./dist/vanilla-extract/index.d.ts",
+      "import": "./dist/vanilla-extract/index.js"
+    },
+    "./global.css": "./src/generated/global.css",
+    "./tokens.css": "./src/generated/tokens.css",
+    "./themes.css": "./src/generated/themes.css",
+    "./tailwind.css": "./src/generated/tailwind.css"
   },
   "scripts": {
-    "build": "tsup && pnpm generate:css",
-    "build:css": "pnpm generate:css",
-    "generate:css": "tsx scripts/generate-css.ts",
-    "dev": "tsup --watch",
+    "build": "pnpm validate && pnpm build:tokens && tsup",
+    "build:tokens": "node scripts/generate-simple-css.mjs",
+    "validate": "node scripts/validate-tokens.mjs",
+    "dev": "node scripts/generate-css.mjs --watch",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --max-warnings 0",
     "test": "vitest run",
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "clean": "rm -rf dist",
-    "tokens:validate": "node dist/validate.js",
-    "tokens:build": "pnpm build"
+    "clean": "rm -rf dist src/generated"
   },
   "dependencies": {
-    "zod": "^3.23.0",
-    "@vanilla-extract/css": "^1.15.0"
+    "@vanilla-extract/css": "^1.15.0",
+    "style-dictionary": "^3.9.2",
+    "zod": "^3.23.0"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "tsup": "^8.0.0",
     "tsx": "^4.7.0",
     "typescript": "^5.7.0",
-    "@types/node": "^22.0.0",
     "vitest": "^2.0.0"
   },
   "tsup": {
     "entry": {
       "index": "src/index.ts",
-      "tokens": "src/tokens/index.ts",
-      "themes": "src/themes/index.ts",
-      "schema": "src/schema/index.ts"
+      "css/index": "src/css/index.ts",
+      "ts/index": "src/ts/index.ts",
+      "vanilla-extract/index": "src/vanilla-extract/index.ts"
     },
     "format": "esm",
     "dts": true,
     "clean": true,
     "sourcemap": true
-  }
+  },
+  "sideEffects": [
+    "./src/generated/**/*.css",
+    "./global.css",
+    "./tokens.css",
+    "./themes.css",
+    "./tailwind.css"
+  ]
 }

@@ -1,0 +1,49 @@
+{
+  "$description": "Shared button contract tokens. System-level button component specifications.",
+  "height": {
+    "sm": { "$value": "{core.size.control.height.sm}", "$type": "dimension", "$description": "Small button height" },
+    "base": { "$value": "{core.size.control.height.base}", "$type": "dimension", "$description": "Base button height" },
+    "lg": { "$value": "{core.size.control.height.lg}", "$type": "dimension", "$description": "Large button height" }
+  },
+  "padding": {
+    "sm": {
+      "horizontal": { "$value": "{core.spacing.3}", "$type": "dimension", "$description": "Small button horizontal padding" },
+      "vertical": { "$value": "{core.spacing.1_5}", "$type": "dimension", "$description": "Small button vertical padding" }
+    },
+    "base": {
+      "horizontal": { "$value": "{core.spacing.4}", "$type": "dimension", "$description": "Base button horizontal padding" },
+      "vertical": { "$value": "{core.spacing.2}", "$type": "dimension", "$description": "Base button vertical padding" }
+    },
+    "lg": {
+      "horizontal": { "$value": "{core.spacing.6}", "$type": "dimension", "$description": "Large button horizontal padding" },
+      "vertical": { "$value": "{core.spacing.2_5}", "$type": "dimension", "$description": "Large button vertical padding" }
+    }
+  },
+  "gap": {
+    "sm": { "$value": "{core.spacing.2}", "$type": "dimension", "$description": "Small button internal gap" },
+    "base": { "$value": "{core.spacing.2}", "$type": "dimension", "$description": "Base button internal gap" },
+    "lg": { "$value": "{core.spacing.3}", "$type": "dimension", "$description": "Large button internal gap" }
+  },
+  "radius": {
+    "sm": { "$value": "{core.radius.base}", "$type": "dimension", "$description": "Small button border radius" },
+    "base": { "$value": "{core.radius.md}", "$type": "dimension", "$description": "Base button border radius" },
+    "lg": { "$value": "{core.radius.lg}", "$type": "dimension", "$description": "Large button border radius" }
+  },
+  "border": {
+    "width": {
+      "sm": { "$value": "{core.border.width.1}", "$type": "strokeWidth", "$description": "Small button border width" },
+      "base": { "$value": "{core.border.width.1}", "$type": "strokeWidth", "$description": "Base button border width" },
+      "lg": { "$value": "{core.border.width.1}", "$type": "strokeWidth", "$description": "Large button border width" }
+    }
+  },
+  "shadow": {
+    "resting": { "$value": "{semantic.elevation.resting}", "$type": "shadow", "$description": "Button resting elevation" },
+    "hover": { "$value": "{semantic.elevation.interactive.hover}", "$type": "shadow", "$description": "Button hover elevation" },
+    "active": { "$value": "{semantic.elevation.interactive.active}", "$type": "shadow", "$description": "Button active elevation" },
+    "focus": { "$value": "{semantic.elevation.interactive.focus}", "$type": "shadow", "$description": "Button focus elevation" }
+  },
+  "transition": {
+    "duration": { "$value": "{semantic.motion.standard.duration}", "$type": "duration", "$description": "Button transition duration" },
+    "easing": { "$value": "{semantic.motion.standard.easing}", "$type": "cubicBezier", "$description": "Button transition easing" }
+  }
+}

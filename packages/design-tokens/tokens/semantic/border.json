@@ -1,0 +1,38 @@
+{
+  "$description": "Semantic border colors. Maps primitive colors to meaningful border hierarchies.",
+  "primary": { "$value": "{core.color.gray.200}", "$type": "color", "$description": "Primary border color" },
+  "secondary": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Secondary border color" },
+  "tertiary": { "$value": "{core.color.gray.50}", "$type": "color", "$description": "Tertiary border color" },
+  "subtle": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Subtle border color" },
+  "strong": { "$value": "{core.color.gray.300}", "$type": "color", "$description": "Strong border color" },
+  "inverse": {
+    "primary": { "$value": "{core.color.gray.600}", "$type": "color", "$description": "Primary inverse border" },
+    "secondary": { "$value": "{core.color.gray.500}", "$type": "color", "$description": "Secondary inverse border" },
+    "subtle": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Subtle inverse border" }
+  },
+  "interactive": {
+    "primary": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Primary interactive border" },
+    "primaryHover": { "$value": "{semantic.color.interactive.primaryHover}", "$type": "color", "$description": "Primary interactive hover border" },
+    "primaryActive": { "$value": "{semantic.color.interactive.primaryActive}", "$type": "color", "$description": "Primary interactive active border" },
+    "secondary": { "$value": "{semantic.color.interactive.secondary}", "$type": "color", "$description": "Secondary interactive border" },
+    "secondaryHover": { "$value": "{semantic.color.interactive.secondaryHover}", "$type": "color", "$description": "Secondary interactive hover border" },
+    "secondaryActive": { "$value": "{semantic.color.interactive.secondaryActive}", "$type": "color", "$description": "Secondary interactive active border" }
+  },
+  "focus": {
+    "primary": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Primary focus border" },
+    "secondary": { "$value": "{semantic.color.interactive.secondary}", "$type": "color", "$description": "Secondary focus border" },
+    "ring": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Focus ring color" }
+  },
+  "status": {
+    "success": { "$value": "{semantic.color.success.base}", "$type": "color", "$description": "Success border color" },
+    "warning": { "$value": "{semantic.color.warning.base}", "$type": "color", "$description": "Warning border color" },
+    "danger": { "$value": "{semantic.color.danger.base}", "$type": "color", "$description": "Danger border color" },
+    "info": { "$value": "{semantic.color.info.base}", "$type": "color", "$description": "Info border color" }
+  },
+  "accent": {
+    "primary": { "$value": "{semantic.color.accent.primary}", "$type": "color", "$description": "Primary accent border" },
+    "secondary": { "$value": "{semantic.color.accent.secondary}", "$type": "color", "$description": "Secondary accent border" },
+    "tertiary": { "$value": "{semantic.color.accent.tertiary}", "$type": "color", "$description": "Tertiary accent border" }
+  },
+  "disabled": { "$value": "{semantic.color.disabled.border}", "$type": "color", "$description": "Disabled border color" }
+}

@@ -26,6 +26,10 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, './src'),
       '@test-utils': resolve(__dirname, './src/test-utils')
-    }
+    },
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json']
+  },
+  optimizeDeps: {
+    exclude: ['@repo/design-tokens']
   }
 });

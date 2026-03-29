@@ -1,0 +1,12 @@
+{
+  "$description": "Raw border radius primitives. Consistent corner rounding across components.",
+  "none": { "$value": "0", "$type": "dimension", "$description": "No border radius" },
+  "sm": { "$value": "2px", "$type": "dimension", "$description": "Small border radius" },
+  "base": { "$value": "4px", "$type": "dimension", "$description": "Base border radius" },
+  "md": { "$value": "6px", "$type": "dimension", "$description": "Medium border radius" },
+  "lg": { "$value": "8px", "$type": "dimension", "$description": "Large border radius" },
+  "xl": { "$value": "12px", "$type": "dimension", "$description": "Extra large border radius" },
+  "2xl": { "$value": "16px", "$type": "dimension", "$description": "2x large border radius" },
+  "3xl": { "$value": "24px", "$type": "dimension", "$description": "3x large border radius" },
+  "full": { "$value": "9999px", "$type": "dimension", "$description": "Fully rounded (pill shape)" }
+}

@@ -1,0 +1,500 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/blocks';
+import { Button, Input, Box, Text, Icon } from '../src/primitives';
+
+<Meta title="Foundations/Getting Started" />
+
+# Getting Started with @repo/ui
+
+Welcome to the @repo/ui component library! This guide will help you get started with our design system and understand how to use our components effectively.
+
+## Installation
+
+```bash
+# Install the UI package
+pnpm add @repo/ui
+
+# Install peer dependencies
+pnpm add react react-dom
+```
+
+## Basic Usage
+
+### Importing Components
+
+```jsx
+// Import individual components
+import { Button, Input, Text } from '@repo/ui';
+
+// Or import everything
+import * as UI from '@repo/ui';
+```
+
+### Your First Component
+
+```jsx
+import { Button, Text, Box } from '@repo/ui';
+
+function MyComponent() {
+  return (
+    <Box p="md" display="flex" flexDirection="column" gap="sm">
+      <Text size="lg" weight="semibold">Welcome to our UI Library</Text>
+      <Button tone="primary" onClick={() => alert('Hello!')}>
+        Get Started
+      </Button>
+    </Box>
+  );
+}
+```
+
+## Component Categories
+
+### Primitives
+
+Primitives are the foundational building blocks of our design system. They provide low-level functionality with maximum flexibility.
+
+#### Button
+
+The Button component is a versatile interactive element that supports multiple styles and states.
+
+<Canvas>
+  <Story name="Button Examples">
+    <Box display="flex" flexDirection="column" gap="md" p="lg">
+      <Text size="md" weight="medium">Button Variants</Text>
+      <Box display="flex" gap="sm" flexWrap="wrap">
+        <Button tone="primary">Primary</Button>
+        <Button tone="secondary">Secondary</Button>
+        <Button tone="success">Success</Button>
+        <Button tone="warning">Warning</Button>
+        <Button tone="error">Error</Button>
+      </Box>
+      
+      <Text size="md" weight="medium">Button Sizes</Text>
+      <Box display="flex" gap="sm" alignItems="center">
+        <Button size="xs" tone="primary">XS</Button>
+        <Button size="sm" tone="primary">SM</Button>
+        <Button size="md" tone="primary">MD</Button>
+        <Button size="lg" tone="primary">LG</Button>
+        <Button size="xl" tone="primary">XL</Button>
+      </Box>
+      
+      <Text size="md" weight="medium">Button States</Text>
+      <Box display="flex" gap="sm">
+        <Button>Normal</Button>
+        <Button disabled>Disabled</Button>
+        <Button loading>Loading</Button>
+      </Box>
+    </Box>
+  </Story>
+</Canvas>
+
+<ArgsTable of={Button} />
+
+#### Input
+
+The Input component provides form input functionality with validation states and accessibility features.
+
+<Canvas>
+  <Story name="Input Examples">
+    <Box display="flex" flexDirection="column" gap="md" p="lg" width="400px">
+      <Text size="md" weight="medium">Input States</Text>
+      <Input placeholder="Normal input" />
+      <Input state="success" placeholder="Success state" />
+      <Input state="error" placeholder="Error state" />
+      <Input disabled placeholder="Disabled input" />
+      
+      <Text size="md" weight="medium">Input Sizes</Text>
+      <Input size="xs" placeholder="Extra small" />
+      <Input size="sm" placeholder="Small" />
+      <Input size="md" placeholder="Medium" />
+      <Input size="lg" placeholder="Large" />
+      <Input size="xl" placeholder="Extra large" />
+    </Box>
+  </Story>
+</Canvas>
+
+<ArgsTable of={Input} />
+
+#### Box
+
+The Box component is a versatile layout primitive for spacing, positioning, and styling.
+
+<Canvas>
+  <Story name="Box Examples">
+    <Box p="lg">
+      <Text size="md" weight="medium" mb="md">Layout Examples</Text>
+      
+      <Box display="flex" gap="sm" mb="lg">
+        <Box p="md" backgroundColor="#f3f4f6" borderRadius="md">
+          Flex Item 1
+        </Box>
+        <Box p="md" backgroundColor="#e5e7eb" borderRadius="md">
+          Flex Item 2
+        </Box>
+        <Box p="md" backgroundColor="#d1d5db" borderRadius="md">
+          Flex Item 3
+        </Box>
+      </Box>
+      
+      <Box display="grid" gridTemplateColumns="1fr 1fr" gap="sm">
+        <Box p="md" backgroundColor="#fef3c7" borderRadius="md">
+          Grid Item 1
+        </Box>
+        <Box p="md" backgroundColor="#fde68a" borderRadius="md">
+          Grid Item 2
+        </Box>
+      </Box>
+    </Box>
+  </Story>
+</Canvas>
+
+<ArgsTable of={Box} />
+
+#### Text
+
+The Text component provides consistent typography with semantic HTML elements.
+
+<Canvas>
+  <Story name="Text Examples">
+    <Box p="lg">
+      <Text as="h1" size="xl" weight="bold" mb="md">
+        Heading Level 1
+      </Text>
+      <Text as="h2" size="lg" weight="semibold" mb="sm">
+        Heading Level 2
+      </Text>
+      <Text as="h3" size="md" weight="semibold" mb="sm">
+        Heading Level 3
+      </Text>
+      <Text size="sm" mb="md">
+        Body text with normal weight and size. This is how regular paragraph text appears.
+      </Text>
+      <Text size="xs" tone="secondary">
+        Small secondary text for captions and fine print.
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+<ArgsTable of={Text} />
+
+#### Icon
+
+The Icon component provides a wrapper for SVG icons with accessibility features.
+
+<Canvas>
+  <Story name="Icon Examples">
+    <Box p="lg">
+      <Text size="md" weight="medium" mb="md">Icon Sizes and Colors</Text>
+      
+      <Box display="flex" gap="md" alignItems="center" mb="lg">
+        <Icon size="xs" color="neutral" label="Extra small icon">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+        </Icon>
+        <Icon size="sm" color="neutral" label="Small icon">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+        </Icon>
+        <Icon size="md" color="neutral" label="Medium icon">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+        </Icon>
+        <Icon size="lg" color="neutral" label="Large icon">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+        </Icon>
+      </Box>
+      
+      <Box display="flex" gap="md" alignItems="center">
+        <Icon size="md" color="success" label="Success">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+        </Icon>
+        <Icon size="md" color="warning" label="Warning">
+          <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z" />
+        </Icon>
+        <Icon size="md" color="error" label="Error">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+        </Icon>
+      </Box>
+    </Box>
+  </Story>
+</Canvas>
+
+<ArgsTable of={Icon} />
+
+## Design Principles
+
+### 1. Accessibility First
+
+All components are built with accessibility as a primary concern:
+
+- **Semantic HTML**: Use appropriate HTML elements
+- **Keyboard Navigation**: Full keyboard support
+- **Screen Readers**: Proper ARIA labels and descriptions
+- **Color Contrast**: WCAG 2.1 AA compliant color combinations
+- **Focus Management**: Visible focus indicators
+
+### 2. Design Token Driven
+
+All visual properties use design tokens:
+
+```jsx
+// ✅ Good - uses design tokens
+<Button tone="primary" size="md">Primary Button</Button>
+
+// ❌ Avoid - hard-coded values
+<button style={{ backgroundColor: '#3b82f6', padding: '16px' }}>
+  Custom Button
+</button>
+```
+
+### 3. Composable
+
+Components are designed to work together:
+
+```jsx
+<Box display="flex" flexDirection="column" gap="md">
+  <Text as="h2" size="lg" weight="semibold">
+    Form Title
+  </Text>
+  <Input placeholder="Enter your email" />
+  <Button tone="primary" size="lg">Submit</Button>
+</Box>
+```
+
+## Common Patterns
+
+### Forms
+
+```jsx
+function ContactForm() {
+  return (
+    <Box as="form" display="flex" flexDirection="column" gap="md" p="lg">
+      <Text as="h2" size="lg" weight="semibold">Contact Us</Text>
+      
+      <Box>
+        <Text as="label" size="sm" weight="medium" display="block" mb="xs">
+          Name
+        </Text>
+        <Input placeholder="Enter your name" required />
+      </Box>
+      
+      <Box>
+        <Text as="label" size="sm" weight="medium" display="block" mb="xs">
+          Email
+        </Text>
+        <Input type="email" placeholder="Enter your email" required />
+      </Box>
+      
+      <Box>
+        <Text as="label" size="sm" weight="medium" display="block" mb="xs">
+          Message
+        </Text>
+        <Input as="textarea" placeholder="Your message" rows={4} />
+      </Box>
+      
+      <Button type="submit" tone="primary" size="lg">
+        Send Message
+      </Button>
+    </Box>
+  );
+}
+```
+
+### Cards
+
+```jsx
+function ProductCard({ title, description, price }) {
+  return (
+    <Box 
+      p="lg" 
+      border="1px solid #e5e7eb" 
+      borderRadius="lg"
+      display="flex"
+      flexDirection="column"
+      gap="md"
+    >
+      <Text as="h3" size="lg" weight="semibold">
+        {title}
+      </Text>
+      <Text size="sm" tone="secondary">
+        {description}
+      </Text>
+      <Box display="flex" justifyContent="space-between" alignItems="center">
+        <Text size="xl" weight="bold" tone="primary">
+          ${price}
+        </Text>
+        <Button tone="primary" size="sm">
+          Add to Cart
+        </Button>
+      </Box>
+    </Box>
+  );
+}
+```
+
+### Navigation
+
+```jsx
+function Navigation() {
+  return (
+    <Box 
+      as="nav" 
+      display="flex" 
+      justifyContent="space-between" 
+      alignItems="center"
+      p="md"
+      border="1px solid #e5e7eb"
+    >
+      <Box display="flex" alignItems="center" gap="sm">
+        <Icon size="lg" color="primary" label="Logo">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </Icon>
+        <Text size="lg" weight="bold">Brand</Text>
+      </Box>
+      
+      <Box display="flex" gap="md">
+        <Button variant="ghost">Home</Button>
+        <Button variant="ghost">Products</Button>
+        <Button variant="ghost">About</Button>
+        <Button tone="primary">Sign In</Button>
+      </Box>
+    </Box>
+  );
+}
+```
+
+## Best Practices
+
+### 1. Use Semantic Elements
+
+```jsx
+// ✅ Good - semantic HTML
+<Text as="h1">Page Title</Text>
+<Text as="p">Paragraph content</Text>
+
+// ✅ Also good - explicit element
+<Box as="section">Section content</Box>
+<Box as="article">Article content</Box>
+```
+
+### 2. Provide Accessible Labels
+
+```jsx
+// ✅ Good - accessible icons
+<Icon label="Search icon">
+  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+</Icon>
+
+// ✅ Good - decorative icons
+<Icon decorative>
+  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+</Icon>
+```
+
+### 3. Handle Loading and Error States
+
+```jsx
+function SubmitButton({ isLoading, error, onClick }) {
+  return (
+    <Box display="flex" flexDirection="column" gap="sm">
+      <Button 
+        tone="primary" 
+        loading={isLoading}
+        disabled={isLoading}
+        onClick={onClick}
+      >
+        {isLoading ? 'Submitting...' : 'Submit'}
+      </Button>
+      
+      {error && (
+        <Text size="sm" tone="error">
+          {error}
+        </Text>
+      )}
+    </Box>
+  );
+}
+```
+
+### 4. Use Consistent Spacing
+
+```jsx
+// ✅ Good - consistent spacing
+<Box display="flex" flexDirection="column" gap="md">
+  <Text>Item 1</Text>
+  <Text>Item 2</Text>
+  <Text>Item 3</Text>
+</Box>
+
+// ❌ Avoid - inconsistent spacing
+<div>
+  <p style={{ marginBottom: '8px' }}>Item 1</p>
+  <p style={{ marginBottom: '16px' }}>Item 2</p>
+  <p style={{ marginBottom: '24px' }}>Item 3</p>
+</div>
+```
+
+## Testing
+
+### Storybook Testing
+
+All components include comprehensive Storybook stories for:
+
+- **Visual Testing**: Chromatic visual regression testing
+- **Accessibility Testing**: axe-core integration
+- **Interaction Testing**: User interaction flows
+- **Responsive Testing**: Multiple viewport testing
+
+### Unit Testing
+
+Components are tested with Vitest and Testing Library:
+
+```jsx
+import { render, screen } from '@testing-library/react';
+import { Button } from '@repo/ui';
+
+test('Button renders with correct text', () => {
+  render(<Button>Click me</Button>);
+  expect(screen.getByRole('button')).toHaveTextContent('Click me');
+});
+
+test('Button handles click events', () => {
+  const handleClick = jest.fn();
+  render(<Button onClick={handleClick}>Click me</Button>);
+  
+  screen.getByRole('button').click();
+  expect(handleClick).toHaveBeenCalledTimes(1);
+});
+```
+
+## Theming
+
+### Light Theme (Default)
+
+The default theme uses a light color palette optimized for readability.
+
+### Dark Theme
+
+Components automatically support dark mode through design tokens:
+
+```jsx
+// Dark mode is handled automatically by design tokens
+// No additional props needed
+<Button tone="primary">Works in dark mode too!</Button>
+```
+
+## Contributing
+
+When contributing to @repo/ui:
+
+1. **Follow Design System**: Use existing design tokens and patterns
+2. **Test Thoroughly**: Include unit tests and Storybook stories
+3. **Document Usage**: Update documentation for new features
+4. **Consider Accessibility**: Ensure WCAG 2.1 AA compliance
+5. **Maintain Consistency**: Follow established naming and structure conventions
+
+## Support
+
+- **Documentation**: [Design System Docs](./)
+- **Component Examples**: [Storybook](http://localhost:6006)
+- **Issues**: [GitHub Issues](https://github.com/your-org/mono-repo/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-org/mono-repo/discussions)
+
+Happy building! 🚀

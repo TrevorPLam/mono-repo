@@ -1,0 +1,19 @@
+{
+  "$description": "Meaning-based elevation mappings. Semantic shadow assignments for UI hierarchy.",
+  "resting": { "$value": "{core.shadow.none}", "$type": "shadow", "$description": "No elevation for resting elements" },
+  "raised": { "$value": "{core.shadow.sm}", "$type": "shadow", "$description": "Subtle elevation for raised elements" },
+  "overlay": { "$value": "{core.shadow.base}", "$type": "shadow", "$description": "Medium elevation for overlay elements" },
+  "modal": { "$value": "{core.shadow.xl}", "$type": "shadow", "$description": "High elevation for modal dialogs" },
+  "dropdown": { "$value": "{core.shadow.lg}", "$type": "shadow", "$description": "Elevation for dropdown menus" },
+  "tooltip": { "$value": "{core.shadow.md}", "$type": "shadow", "$description": "Elevation for tooltips" },
+  "interactive": {
+    "hover": { "$value": "{core.shadow.base}", "$type": "shadow", "$description": "Elevation for interactive hover states" },
+    "active": { "$value": "{core.shadow.sm}", "$type": "shadow", "$description": "Elevation for interactive active states" },
+    "focus": { "$value": "{core.shadow.md}", "$type": "shadow", "$description": "Elevation for interactive focus states" }
+  },
+  "card": {
+    "base": { "$value": "{core.shadow.sm}", "$type": "shadow", "$description": "Base elevation for cards" },
+    "hover": { "$value": "{core.shadow.base}", "$type": "shadow", "$description": "Elevation for card hover states" },
+    "interactive": { "$value": "{core.shadow.md}", "$type": "shadow", "$description": "Elevation for interactive cards" }
+  }
+}

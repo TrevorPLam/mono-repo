@@ -1,0 +1,65 @@
+{
+  "name": "@repo/analytics",
+  "version": "0.1.0",
+  "description": "Privacy-first analytics infrastructure for multi-provider measurement",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./providers": {
+      "types": "./dist/providers/index.d.ts",
+      "import": "./dist/providers/index.js"
+    },
+    "./consent": {
+      "types": "./dist/consent/index.d.ts", 
+      "import": "./dist/consent/index.js"
+    },
+    "./events": {
+      "types": "./dist/events/index.d.ts",
+      "import": "./dist/events/index.js"
+    },
+    "./adapters": {
+      "types": "./dist/adapters/index.d.ts",
+      "import": "./dist/adapters/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix"
+  },
+  "dependencies": {
+    "@repo/contracts": "workspace:*",
+    "@repo/env": "workspace:*",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0",
+    "@vitest/coverage-v8": "^2.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "analytics",
+    "privacy",
+    "ga4",
+    "meta",
+    "posthog",
+    "server-side",
+    "consent"
+  ],
+  "author": "Marketing Firm Monorepo",
+  "license": "UNLICENSED"
+}

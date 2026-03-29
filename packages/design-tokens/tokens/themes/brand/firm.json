@@ -1,0 +1,60 @@
+{
+  "$description": "Firm-brand semantic overlay. Brand-specific overrides for firm identity.",
+  "color": {
+    "accent": {
+      "primary": { "$value": "{core.color.blue.600}", "$type": "color", "$description": "Firm primary accent color" },
+      "secondary": { "$value": "{core.color.gray.600}", "$type": "color", "$description": "Firm secondary accent color" },
+      "tertiary": { "$value": "{core.color.blue.500}", "$type": "color", "$description": "Firm tertiary accent color" }
+    },
+    "interactive": {
+      "primary": { "$value": "{core.color.blue.600}", "$type": "color", "$description": "Firm primary interactive color" },
+      "primaryHover": { "$value": "{core.color.blue.700}", "$type": "color", "$description": "Firm primary interactive hover" },
+      "primaryActive": { "$value": "{core.color.blue.800}", "$type": "color", "$description": "Firm primary interactive active" }
+    }
+  },
+  "focus": {
+    "ring": {
+      "color": { "$value": "{core.color.blue.600}", "$type": "color", "$description": "Firm focus ring color" }
+    },
+    "outline": {
+      "color": { "$value": "{core.color.blue.600}", "$type": "color", "$description": "Firm focus outline color" }
+    },
+    "visible": {
+      "color": { "$value": "{core.color.blue.600}", "$type": "color", "$description": "Firm visible focus color" },
+      "background": { "$value": "{core.color.blue.50}", "$type": "color", "$description": "Firm visible focus background" }
+    }
+  },
+  "border": {
+    "accent": {
+      "primary": { "$value": "{core.color.blue.600}", "$type": "color", "$description": "Firm primary accent border" },
+      "secondary": { "$value": "{core.color.blue.400}", "$type": "color", "$description": "Firm secondary accent border" },
+      "tertiary": { "$value": "{core.color.blue.300}", "$type": "color", "$description": "Firm tertiary accent border" }
+    },
+    "interactive": {
+      "primary": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Firm primary interactive border" },
+      "primaryHover": { "$value": "{semantic.color.interactive.primaryHover}", "$type": "color", "$description": "Firm primary interactive hover border" },
+      "primaryActive": { "$value": "{semantic.color.interactive.primaryActive}", "$type": "color", "$description": "Firm primary interactive active border" }
+    }
+  },
+  "surface": {
+    "accent": { "$value": "{core.color.blue.50}", "$type": "color", "$description": "Firm accent surface" }
+  },
+  "text": {
+    "link": {
+      "primary": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Firm primary link color" },
+      "hover": { "$value": "{semantic.color.interactive.primaryHover}", "$type": "color", "$description": "Firm link hover color" }
+    },
+    "accent": {
+      "primary": { "$value": "{semantic.color.accent.primary}", "$type": "color", "$description": "Firm primary accent text" },
+      "secondary": { "$value": "{semantic.color.accent.secondary}", "$type": "color", "$description": "Firm secondary accent text" },
+      "tertiary": { "$value": "{semantic.color.accent.tertiary}", "$type": "color", "$description": "Firm tertiary accent text" }
+    }
+  },
+  "icon": {
+    "accent": {
+      "primary": { "$value": "{semantic.color.accent.primary}", "$type": "color", "$description": "Firm primary accent icon" },
+      "secondary": { "$value": "{semantic.color.accent.secondary}", "$type": "color", "$description": "Firm secondary accent icon" },
+      "tertiary": { "$value": "{semantic.color.accent.tertiary}", "$type": "color", "$description": "Firm tertiary accent icon" }
+    }
+  }
+}

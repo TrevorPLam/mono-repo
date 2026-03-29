@@ -1,0 +1,20 @@
+{
+  "$description": "Raw motion primitives. Durations and easing functions for animations and transitions.",
+  "duration": {
+    "instant": { "$value": "0ms", "$type": "duration", "$description": "Instant transition" },
+    "fast": { "$value": "150ms", "$type": "duration", "$description": "Fast transition" },
+    "normal": { "$value": "200ms", "$type": "duration", "$description": "Normal transition" },
+    "slow": { "$value": "300ms", "$type": "duration", "$description": "Slow transition" },
+    "slower": { "$value": "500ms", "$type": "duration", "$description": "Slower transition" }
+  },
+  "easing": {
+    "linear": { "$value": "linear", "$type": "cubicBezier", "$description": "Linear easing" },
+    "standard": { "$value": "cubic-bezier(0.4, 0, 0.2, 1)", "$type": "cubicBezier", "$description": "Standard easing for UI" },
+    "ease-in": { "$value": "cubic-bezier(0.4, 0, 1, 1)", "$type": "cubicBezier", "$description": "Ease-in easing" },
+    "ease-out": { "$value": "cubic-bezier(0, 0, 0.2, 1)", "$type": "cubicBezier", "$description": "Ease-out easing" },
+    "ease-in-out": { "$value": "cubic-bezier(0.4, 0, 0.2, 1)", "$type": "cubicBezier", "$description": "Ease-in-out easing" },
+    "emphasized": { "$value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)", "$type": "cubicBezier", "$description": "Emphasized easing for attention" },
+    "decelerated": { "$value": "cubic-bezier(0, 0, 0.2, 1)", "$type": "cubicBezier", "$description": "Decelerated easing for entry" },
+    "accelerated": { "$value": "cubic-bezier(0.4, 0, 1, 1)", "$type": "cubicBezier", "$description": "Accelerated easing for exit" }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$description": "Raw border primitives. Border widths and styles for component outlines.",
+  "width": {
+    "0": { "$value": "0", "$type": "strokeWidth", "$description": "No border" },
+    "1": { "$value": "1px", "$type": "strokeWidth", "$description": "Thin border" },
+    "2": { "$value": "2px", "$type": "strokeWidth", "$description": "Medium border" },
+    "4": { "$value": "4px", "$type": "strokeWidth", "$description": "Thick border" },
+    "8": { "$value": "8px", "$type": "strokeWidth", "$description": "Very thick border" }
+  },
+  "style": {
+    "solid": { "$value": "solid", "$type": "strokeStyle", "$description": "Solid border style" },
+    "dashed": { "$value": "dashed", "$type": "strokeStyle", "$description": "Dashed border style" },
+    "dotted": { "$value": "dotted", "$type": "strokeStyle", "$description": "Dotted border style" },
+    "double": { "$value": "double", "$type": "strokeStyle", "$description": "Double border style" }
+  }
+}

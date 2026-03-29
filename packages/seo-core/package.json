@@ -1,0 +1,62 @@
+{
+  "name": "@repo/seo-core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic SEO policy engine for the monorepo",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./metadata": "./dist/metadata/index.js",
+    "./canonicals": "./dist/canonicals/index.js",
+    "./sitemap": "./dist/sitemap/index.js",
+    "./robots": "./dist/robots/index.js",
+    "./schema": "./dist/schema/index.js",
+    "./config": "./dist/config/index.js",
+    "./routing": "./dist/routing/index.js",
+    "./resolution": "./dist/resolution/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "lint": "eslint src --ext .ts,.tsx",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@repo/contracts": "workspace:*",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^2.1.9",
+    "eslint": "^9.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/repo/monorepo.git",
+    "directory": "packages/seo-core"
+  },
+  "keywords": [
+    "seo",
+    "metadata",
+    "canonical",
+    "sitemap",
+    "robots",
+    "schema",
+    "framework-agnostic"
+  ],
+  "author": "Monorepo Team",
+  "license": "UNLICENSED"
+}

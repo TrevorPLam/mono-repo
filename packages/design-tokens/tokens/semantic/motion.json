@@ -1,0 +1,59 @@
+{
+  "$description": "Meaning-based motion mappings. Semantic duration and easing assignments for UI interactions.",
+  "standard": {
+    "duration": { "$value": "{core.motion.duration.normal}", "$type": "duration", "$description": "Standard transition duration" },
+    "easing": { "$value": "{core.motion.easing.standard}", "$type": "cubicBezier", "$description": "Standard easing function" }
+  },
+  "emphasized": {
+    "duration": { "$value": "{core.motion.duration.slow}", "$type": "duration", "$description": "Emphasized transition duration" },
+    "easing": { "$value": "{core.motion.easing.emphasized}", "$type": "cubicBezier", "$description": "Emphasized easing function" }
+  },
+  "enter": {
+    "fast": {
+      "duration": { "$value": "{core.motion.duration.fast}", "$type": "duration", "$description": "Fast enter duration" },
+      "easing": { "$value": "{core.motion.easing.decelerated}", "$type": "cubicBezier", "$description": "Decelerated easing for entry" }
+    },
+    "slow": {
+      "duration": { "$value": "{core.motion.duration.normal}", "$type": "duration", "$description": "Slow enter duration" },
+      "easing": { "$value": "{core.motion.easing.decelerated}", "$type": "cubicBezier", "$description": "Decelerated easing for entry" }
+    }
+  },
+  "exit": {
+    "fast": {
+      "duration": { "$value": "{core.motion.duration.fast}", "$type": "duration", "$description": "Fast exit duration" },
+      "easing": { "$value": "{core.motion.easing.accelerated}", "$type": "cubicBezier", "$description": "Accelerated easing for exit" }
+    },
+    "slow": {
+      "duration": { "$value": "{core.motion.duration.normal}", "$type": "duration", "$description": "Slow exit duration" },
+      "easing": { "$value": "{core.motion.easing.accelerated}", "$type": "cubicBezier", "$description": "Accelerated easing for exit" }
+    }
+  },
+  "interactive": {
+    "hover": {
+      "duration": { "$value": "{core.motion.duration.fast}", "$type": "duration", "$description": "Hover transition duration" },
+      "easing": { "$value": "{core.motion.easing.ease-out}", "$type": "cubicBezier", "$description": "Hover easing function" }
+    },
+    "focus": {
+      "duration": { "$value": "{core.motion.duration.normal}", "$type": "duration", "$description": "Focus transition duration" },
+      "easing": { "$value": "{core.motion.easing.ease-out}", "$type": "cubicBezier", "$description": "Focus easing function" }
+    },
+    "active": {
+      "duration": { "$value": "{core.motion.duration.instant}", "$type": "duration", "$description": "Active transition duration" },
+      "easing": { "$value": "{core.motion.easing.ease-in-out}", "$type": "cubicBezier", "$description": "Active easing function" }
+    }
+  },
+  "loading": {
+    "duration": { "$value": "{core.motion.duration.slow}", "$type": "duration", "$description": "Loading animation duration" },
+    "easing": { "$value": "{core.motion.easing.ease-in-out}", "$type": "cubicBezier", "$description": "Loading easing function" }
+  },
+  "notification": {
+    "enter": {
+      "duration": { "$value": "{core.motion.duration.normal}", "$type": "duration", "$description": "Notification enter duration" },
+      "easing": { "$value": "{core.motion.easing.emphasized}", "$type": "cubicBezier", "$description": "Notification enter easing" }
+    },
+    "exit": {
+      "duration": { "$value": "{core.motion.duration.fast}", "$type": "duration", "$description": "Notification exit duration" },
+      "easing": { "$value": "{core.motion.easing.accelerated}", "$type": "cubicBezier", "$description": "Notification exit easing" }
+    }
+  }
+}

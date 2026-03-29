@@ -1,0 +1,301 @@
+/* 
+ * Semantic Design Tokens
+ * Generated: 2026-03-29T14:53:00.791Z
+ * Framework: Framework-agnostic
+ * Best Practices: CSS custom properties, semantic naming
+ */
+
+:root {
+  /* Semantic Tokens */
+  --repo-semantic-border-primary: {core.color.gray.200}; /* Primary border color */
+  --repo-semantic-border-secondary: {core.color.gray.100}; /* Secondary border color */
+  --repo-semantic-border-tertiary: {core.color.gray.50}; /* Tertiary border color */
+  --repo-semantic-border-subtle: {core.color.gray.100}; /* Subtle border color */
+  --repo-semantic-border-strong: {core.color.gray.300}; /* Strong border color */
+  --repo-semantic-border-inverse-primary: {core.color.gray.600}; /* Primary inverse border */
+  --repo-semantic-border-inverse-secondary: {core.color.gray.500}; /* Secondary inverse border */
+  --repo-semantic-border-inverse-subtle: {core.color.gray.700}; /* Subtle inverse border */
+  --repo-semantic-border-interactive-primary: {semantic.color.interactive.primary}; /* Primary interactive border */
+  --repo-semantic-border-interactive-primaryHover: {semantic.color.interactive.primaryHover}; /* Primary interactive hover border */
+  --repo-semantic-border-interactive-primaryActive: {semantic.color.interactive.primaryActive}; /* Primary interactive active border */
+  --repo-semantic-border-interactive-secondary: {semantic.color.interactive.secondary}; /* Secondary interactive border */
+  --repo-semantic-border-interactive-secondaryHover: {semantic.color.interactive.secondaryHover}; /* Secondary interactive hover border */
+  --repo-semantic-border-interactive-secondaryActive: {semantic.color.interactive.secondaryActive}; /* Secondary interactive active border */
+  --repo-semantic-border-focus-primary: {semantic.color.interactive.primary}; /* Primary focus border */
+  --repo-semantic-border-focus-secondary: {semantic.color.interactive.secondary}; /* Secondary focus border */
+  --repo-semantic-border-focus-ring: {semantic.color.interactive.primary}; /* Focus ring color */
+  --repo-semantic-border-status-success: {semantic.color.success.base}; /* Success border color */
+  --repo-semantic-border-status-warning: {semantic.color.warning.base}; /* Warning border color */
+  --repo-semantic-border-status-danger: {semantic.color.danger.base}; /* Danger border color */
+  --repo-semantic-border-status-info: {semantic.color.info.base}; /* Info border color */
+  --repo-semantic-border-accent-primary: {semantic.color.accent.primary}; /* Primary accent border */
+  --repo-semantic-border-accent-secondary: {semantic.color.accent.secondary}; /* Secondary accent border */
+  --repo-semantic-border-accent-tertiary: {semantic.color.accent.tertiary}; /* Tertiary accent border */
+  --repo-semantic-border-disabled: {semantic.color.disabled.border}; /* Disabled border color */
+  --repo-semantic-color-accent-primary: {core.color.blue.500}; /* Primary accent color for main actions */
+  --repo-semantic-color-accent-secondary: {core.color.gray.500}; /* Secondary accent color */
+  --repo-semantic-color-accent-tertiary: {core.color.gray.400}; /* Tertiary accent color */
+  --repo-semantic-color-interactive-primary: {core.color.blue.500}; /* Primary interactive element */
+  --repo-semantic-color-interactive-primaryHover: {core.color.blue.600}; /* Primary interactive hover state */
+  --repo-semantic-color-interactive-primaryActive: {core.color.blue.700}; /* Primary interactive active state */
+  --repo-semantic-color-interactive-secondary: {core.color.gray.500}; /* Secondary interactive element */
+  --repo-semantic-color-interactive-secondaryHover: {core.color.gray.600}; /* Secondary interactive hover state */
+  --repo-semantic-color-interactive-secondaryActive: {core.color.gray.700}; /* Secondary interactive active state */
+  --repo-semantic-color-success-base: {core.color.green.500}; /* Success state color */
+  --repo-semantic-color-success-light: {core.color.green.50}; /* Light success background */
+  --repo-semantic-color-success-dark: {core.color.green.700}; /* Dark success text */
+  --repo-semantic-color-warning-base: {core.color.yellow.500}; /* Warning state color */
+  --repo-semantic-color-warning-light: {core.color.yellow.50}; /* Light warning background */
+  --repo-semantic-color-warning-dark: {core.color.yellow.700}; /* Dark warning text */
+  --repo-semantic-color-danger-base: {core.color.red.500}; /* Danger/error state color */
+  --repo-semantic-color-danger-light: {core.color.red.50}; /* Light danger background */
+  --repo-semantic-color-danger-dark: {core.color.red.700}; /* Dark danger text */
+  --repo-semantic-color-info-base: {core.color.blue.500}; /* Info state color */
+  --repo-semantic-color-info-light: {core.color.blue.50}; /* Light info background */
+  --repo-semantic-color-info-dark: {core.color.blue.700}; /* Dark info text */
+  --repo-semantic-color-disabled-text: {core.color.gray.300}; /* Disabled text color */
+  --repo-semantic-color-disabled-background: {core.color.gray.100}; /* Disabled background color */
+  --repo-semantic-color-disabled-border: {core.color.gray.200}; /* Disabled border color */
+  --repo-semantic-elevation-resting: {core.shadow.none}; /* No elevation for resting elements */
+  --repo-semantic-elevation-raised: {core.shadow.sm}; /* Subtle elevation for raised elements */
+  --repo-semantic-elevation-overlay: {core.shadow.base}; /* Medium elevation for overlay elements */
+  --repo-semantic-elevation-modal: {core.shadow.xl}; /* High elevation for modal dialogs */
+  --repo-semantic-elevation-dropdown: {core.shadow.lg}; /* Elevation for dropdown menus */
+  --repo-semantic-elevation-tooltip: {core.shadow.md}; /* Elevation for tooltips */
+  --repo-semantic-elevation-interactive-hover: {core.shadow.base}; /* Elevation for interactive hover states */
+  --repo-semantic-elevation-interactive-active: {core.shadow.sm}; /* Elevation for interactive active states */
+  --repo-semantic-elevation-interactive-focus: {core.shadow.md}; /* Elevation for interactive focus states */
+  --repo-semantic-elevation-card-base: {core.shadow.sm}; /* Base elevation for cards */
+  --repo-semantic-elevation-card-hover: {core.shadow.base}; /* Elevation for card hover states */
+  --repo-semantic-elevation-card-interactive: {core.shadow.md}; /* Elevation for interactive cards */
+  --repo-semantic-focus-ring-color: {semantic.color.interactive.primary}; /* Focus ring color */
+  --repo-semantic-focus-ring-width: {core.border.width.2}; /* Focus ring width */
+  --repo-semantic-focus-ring-offset: {core.spacing.1}; /* Focus ring offset */
+  --repo-semantic-focus-outline-color: {semantic.color.interactive.primary}; /* Focus outline color */
+  --repo-semantic-focus-outline-width: {core.border.width.2}; /* Focus outline width */
+  --repo-semantic-focus-outline-style: {core.border.style.solid}; /* Focus outline style */
+  --repo-semantic-focus-visible-color: {semantic.color.interactive.primary}; /* Visible focus color */
+  --repo-semantic-focus-visible-background: {semantic.surface.focus}; /* Visible focus background */
+  --repo-semantic-focus-visible-offset: {core.spacing.0_5}; /* Visible focus offset */
+  --repo-semantic-focus-highContrast-color: {core.color.black}; /* High contrast focus color */
+  --repo-semantic-focus-highContrast-width: {core.border.width.4}; /* High contrast focus width */
+  --repo-semantic-focus-highContrast-offset: {core.spacing.1}; /* High contrast focus offset */
+  --repo-semantic-icon-primary: {semantic.text.primary}; /* Primary icon color */
+  --repo-semantic-icon-secondary: {semantic.text.secondary}; /* Secondary icon color */
+  --repo-semantic-icon-muted: {semantic.text.muted}; /* Muted icon color */
+  --repo-semantic-icon-subtle: {semantic.text.subtle}; /* Subtle icon color */
+  --repo-semantic-icon-inverse-primary: {semantic.text.inverse.primary}; /* Primary inverse icon */
+  --repo-semantic-icon-inverse-secondary: {semantic.text.inverse.secondary}; /* Secondary inverse icon */
+  --repo-semantic-icon-inverse-tertiary: {semantic.text.inverse.tertiary}; /* Tertiary inverse icon */
+  --repo-semantic-icon-interactive-primary: {semantic.color.interactive.primary}; /* Primary interactive icon */
+  --repo-semantic-icon-interactive-primaryHover: {semantic.color.interactive.primaryHover}; /* Primary interactive hover icon */
+  --repo-semantic-icon-interactive-primaryActive: {semantic.color.interactive.primaryActive}; /* Primary interactive active icon */
+  --repo-semantic-icon-interactive-secondary: {semantic.color.interactive.secondary}; /* Secondary interactive icon */
+  --repo-semantic-icon-interactive-secondaryHover: {semantic.color.interactive.secondaryHover}; /* Secondary interactive hover icon */
+  --repo-semantic-icon-interactive-secondaryActive: {semantic.color.interactive.secondaryActive}; /* Secondary interactive active icon */
+  --repo-semantic-icon-status-success: {semantic.color.success.base}; /* Success icon color */
+  --repo-semantic-icon-status-warning: {semantic.color.warning.base}; /* Warning icon color */
+  --repo-semantic-icon-status-danger: {semantic.color.danger.base}; /* Danger icon color */
+  --repo-semantic-icon-status-info: {semantic.color.info.base}; /* Info icon color */
+  --repo-semantic-icon-accent-primary: {semantic.color.accent.primary}; /* Primary accent icon */
+  --repo-semantic-icon-accent-secondary: {semantic.color.accent.secondary}; /* Secondary accent icon */
+  --repo-semantic-icon-accent-tertiary: {semantic.color.accent.tertiary}; /* Tertiary accent icon */
+  --repo-semantic-icon-disabled: {semantic.color.disabled.text}; /* Disabled icon color */
+  --repo-semantic-motion-standard-duration: {core.motion.duration.normal}; /* Standard transition duration */
+  --repo-semantic-motion-standard-easing: {core.motion.easing.standard}; /* Standard easing function */
+  --repo-semantic-motion-emphasized-duration: {core.motion.duration.slow}; /* Emphasized transition duration */
+  --repo-semantic-motion-emphasized-easing: {core.motion.easing.emphasized}; /* Emphasized easing function */
+  --repo-semantic-motion-enter-fast-duration: {core.motion.duration.fast}; /* Fast enter duration */
+  --repo-semantic-motion-enter-fast-easing: {core.motion.easing.decelerated}; /* Decelerated easing for entry */
+  --repo-semantic-motion-enter-slow-duration: {core.motion.duration.normal}; /* Slow enter duration */
+  --repo-semantic-motion-enter-slow-easing: {core.motion.easing.decelerated}; /* Decelerated easing for entry */
+  --repo-semantic-motion-exit-fast-duration: {core.motion.duration.fast}; /* Fast exit duration */
+  --repo-semantic-motion-exit-fast-easing: {core.motion.easing.accelerated}; /* Accelerated easing for exit */
+  --repo-semantic-motion-exit-slow-duration: {core.motion.duration.normal}; /* Slow exit duration */
+  --repo-semantic-motion-exit-slow-easing: {core.motion.easing.accelerated}; /* Accelerated easing for exit */
+  --repo-semantic-motion-interactive-hover-duration: {core.motion.duration.fast}; /* Hover transition duration */
+  --repo-semantic-motion-interactive-hover-easing: {core.motion.easing.ease-out}; /* Hover easing function */
+  --repo-semantic-motion-interactive-focus-duration: {core.motion.duration.normal}; /* Focus transition duration */
+  --repo-semantic-motion-interactive-focus-easing: {core.motion.easing.ease-out}; /* Focus easing function */
+  --repo-semantic-motion-interactive-active-duration: {core.motion.duration.instant}; /* Active transition duration */
+  --repo-semantic-motion-interactive-active-easing: {core.motion.easing.ease-in-out}; /* Active easing function */
+  --repo-semantic-motion-loading-duration: {core.motion.duration.slow}; /* Loading animation duration */
+  --repo-semantic-motion-loading-easing: {core.motion.easing.ease-in-out}; /* Loading easing function */
+  --repo-semantic-motion-notification-enter-duration: {core.motion.duration.normal}; /* Notification enter duration */
+  --repo-semantic-motion-notification-enter-easing: {core.motion.easing.emphasized}; /* Notification enter easing */
+  --repo-semantic-motion-notification-exit-duration: {core.motion.duration.fast}; /* Notification exit duration */
+  --repo-semantic-motion-notification-exit-easing: {core.motion.easing.accelerated}; /* Notification exit easing */
+  --repo-semantic-spacing-stack-xs: {core.spacing.1}; /* Extra small vertical spacing */
+  --repo-semantic-spacing-stack-sm: {core.spacing.2}; /* Small vertical spacing */
+  --repo-semantic-spacing-stack-base: {core.spacing.3}; /* Base vertical spacing */
+  --repo-semantic-spacing-stack-md: {core.spacing.4}; /* Medium vertical spacing */
+  --repo-semantic-spacing-stack-lg: {core.spacing.6}; /* Large vertical spacing */
+  --repo-semantic-spacing-stack-xl: {core.spacing.8}; /* Extra large vertical spacing */
+  --repo-semantic-spacing-stack-2xl: {core.spacing.12}; /* 2x large vertical spacing */
+  --repo-semantic-spacing-stack-3xl: {core.spacing.16}; /* 3x large vertical spacing */
+  --repo-semantic-spacing-inline-xs: {core.spacing.1}; /* Extra small horizontal spacing */
+  --repo-semantic-spacing-inline-sm: {core.spacing.2}; /* Small horizontal spacing */
+  --repo-semantic-spacing-inline-base: {core.spacing.3}; /* Base horizontal spacing */
+  --repo-semantic-spacing-inline-md: {core.spacing.4}; /* Medium horizontal spacing */
+  --repo-semantic-spacing-inline-lg: {core.spacing.6}; /* Large horizontal spacing */
+  --repo-semantic-spacing-inline-xl: {core.spacing.8}; /* Extra large horizontal spacing */
+  --repo-semantic-spacing-inline-2xl: {core.spacing.12}; /* 2x large horizontal spacing */
+  --repo-semantic-spacing-inline-3xl: {core.spacing.16}; /* 3x large horizontal spacing */
+  --repo-semantic-spacing-inset-xs: {core.spacing.1}; /* Extra small inset spacing */
+  --repo-semantic-spacing-inset-sm: {core.spacing.2}; /* Small inset spacing */
+  --repo-semantic-spacing-inset-base: {core.spacing.3}; /* Base inset spacing */
+  --repo-semantic-spacing-inset-md: {core.spacing.4}; /* Medium inset spacing */
+  --repo-semantic-spacing-inset-lg: {core.spacing.6}; /* Large inset spacing */
+  --repo-semantic-spacing-inset-xl: {core.spacing.8}; /* Extra large inset spacing */
+  --repo-semantic-spacing-inset-2xl: {core.spacing.12}; /* 2x large inset spacing */
+  --repo-semantic-spacing-inset-3xl: {core.spacing.16}; /* 3x large inset spacing */
+  --repo-semantic-spacing-gap-xs: {core.spacing.1}; /* Extra small gap spacing */
+  --repo-semantic-spacing-gap-sm: {core.spacing.2}; /* Small gap spacing */
+  --repo-semantic-spacing-gap-base: {core.spacing.3}; /* Base gap spacing */
+  --repo-semantic-spacing-gap-md: {core.spacing.4}; /* Medium gap spacing */
+  --repo-semantic-spacing-gap-lg: {core.spacing.6}; /* Large gap spacing */
+  --repo-semantic-spacing-gap-xl: {core.spacing.8}; /* Extra large gap spacing */
+  --repo-semantic-spacing-gap-2xl: {core.spacing.12}; /* 2x large gap spacing */
+  --repo-semantic-spacing-gap-3xl: {core.spacing.16}; /* 3x large gap spacing */
+  --repo-semantic-surface-canvas-primary: {core.color.white}; /* Main canvas background */
+  --repo-semantic-surface-canvas-secondary: {core.color.gray.50}; /* Secondary canvas background */
+  --repo-semantic-surface-canvas-tertiary: {core.color.gray.100}; /* Tertiary canvas background */
+  --repo-semantic-surface-subtle-primary: {core.color.gray.50}; /* Subtle background for grouped content */
+  --repo-semantic-surface-subtle-secondary: {core.color.gray.100}; /* Secondary subtle background */
+  --repo-semantic-surface-subtle-accent: {core.color.blue.50}; /* Accent subtle background */
+  --repo-semantic-surface-elevated-primary: {core.color.white}; /* Elevated surface background */
+  --repo-semantic-surface-elevated-secondary: {core.color.gray.50}; /* Secondary elevated surface */
+  --repo-semantic-surface-elevated-overlay: {core.color.gray.50}; /* Overlay surface background */
+  --repo-semantic-surface-inverse-primary: {core.color.gray.900}; /* Inverse surface for dark contexts */
+  --repo-semantic-surface-inverse-secondary: {core.color.gray.800}; /* Secondary inverse surface */
+  --repo-semantic-surface-inverse-accent: {core.color.blue.900}; /* Accent inverse surface */
+  --repo-semantic-surface-interactive-hover: {core.color.gray.100}; /* Interactive hover background */
+  --repo-semantic-surface-interactive-active: {core.color.gray.200}; /* Interactive active background */
+  --repo-semantic-surface-interactive-focus: {core.color.blue.100}; /* Interactive focus background */
+  --repo-semantic-surface-interactive-selected: {core.color.blue.100}; /* Selected state background */
+  --repo-semantic-surface-status-success: {semantic.color.success.light}; /* Success status background */
+  --repo-semantic-surface-status-warning: {semantic.color.warning.light}; /* Warning status background */
+  --repo-semantic-surface-status-danger: {semantic.color.danger.light}; /* Danger status background */
+  --repo-semantic-surface-status-info: {semantic.color.info.light}; /* Info status background */
+  --repo-semantic-text-primary: {core.color.gray.900}; /* Primary text color */
+  --repo-semantic-text-secondary: {core.color.gray.600}; /* Secondary text color */
+  --repo-semantic-text-tertiary: {core.color.gray.500}; /* Tertiary text color */
+  --repo-semantic-text-muted: {core.color.gray.400}; /* Muted text color */
+  --repo-semantic-text-subtle: {core.color.gray.300}; /* Subtle text color */
+  --repo-semantic-text-inverse-primary: {core.color.white}; /* Primary inverse text color */
+  --repo-semantic-text-inverse-secondary: {core.color.gray.200}; /* Secondary inverse text color */
+  --repo-semantic-text-inverse-tertiary: {core.color.gray.300}; /* Tertiary inverse text color */
+  --repo-semantic-text-interactive-primary: {semantic.color.interactive.primary}; /* Primary interactive text */
+  --repo-semantic-text-interactive-primaryHover: {semantic.color.interactive.primaryHover}; /* Primary interactive hover text */
+  --repo-semantic-text-interactive-primaryActive: {semantic.color.interactive.primaryActive}; /* Primary interactive active text */
+  --repo-semantic-text-interactive-secondary: {semantic.color.interactive.secondary}; /* Secondary interactive text */
+  --repo-semantic-text-interactive-secondaryHover: {semantic.color.interactive.secondaryHover}; /* Secondary interactive hover text */
+  --repo-semantic-text-interactive-secondaryActive: {semantic.color.interactive.secondaryActive}; /* Secondary interactive active text */
+  --repo-semantic-text-link-primary: {semantic.color.interactive.primary}; /* Primary link color */
+  --repo-semantic-text-link-visited: {core.color.purple.600}; /* Visited link color */
+  --repo-semantic-text-link-hover: {semantic.color.interactive.primaryHover}; /* Link hover color */
+  --repo-semantic-text-status-success: {semantic.color.success.dark}; /* Success text color */
+  --repo-semantic-text-status-warning: {semantic.color.warning.dark}; /* Warning text color */
+  --repo-semantic-text-status-danger: {semantic.color.danger.dark}; /* Danger text color */
+  --repo-semantic-text-status-info: {semantic.color.info.dark}; /* Info text color */
+  --repo-semantic-text-accent-primary: {semantic.color.accent.primary}; /* Primary accent text */
+  --repo-semantic-text-accent-secondary: {semantic.color.accent.secondary}; /* Secondary accent text */
+  --repo-semantic-text-accent-tertiary: {semantic.color.accent.tertiary}; /* Tertiary accent text */
+  --repo-semantic-typography-body-xs-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-body-xs-fontSize: {core.typography.fontSize.xs};
+  --repo-semantic-typography-body-xs-fontWeight: {core.typography.fontWeight.normal};
+  --repo-semantic-typography-body-xs-lineHeight: {core.typography.lineHeight.normal};
+  --repo-semantic-typography-body-xs-letterSpacing: {core.typography.letterSpacing.normal};
+  --repo-semantic-typography-body-sm-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-body-sm-fontSize: {core.typography.fontSize.sm};
+  --repo-semantic-typography-body-sm-fontWeight: {core.typography.fontWeight.normal};
+  --repo-semantic-typography-body-sm-lineHeight: {core.typography.lineHeight.normal};
+  --repo-semantic-typography-body-sm-letterSpacing: {core.typography.letterSpacing.normal};
+  --repo-semantic-typography-body-base-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-body-base-fontSize: {core.typography.fontSize.base};
+  --repo-semantic-typography-body-base-fontWeight: {core.typography.fontWeight.normal};
+  --repo-semantic-typography-body-base-lineHeight: {core.typography.lineHeight.normal};
+  --repo-semantic-typography-body-base-letterSpacing: {core.typography.letterSpacing.normal};
+  --repo-semantic-typography-body-lg-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-body-lg-fontSize: {core.typography.fontSize.lg};
+  --repo-semantic-typography-body-lg-fontWeight: {core.typography.fontWeight.normal};
+  --repo-semantic-typography-body-lg-lineHeight: {core.typography.lineHeight.normal};
+  --repo-semantic-typography-body-lg-letterSpacing: {core.typography.letterSpacing.normal};
+  --repo-semantic-typography-body-xl-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-body-xl-fontSize: {core.typography.fontSize.xl};
+  --repo-semantic-typography-body-xl-fontWeight: {core.typography.fontWeight.normal};
+  --repo-semantic-typography-body-xl-lineHeight: {core.typography.lineHeight.relaxed};
+  --repo-semantic-typography-body-xl-letterSpacing: {core.typography.letterSpacing.normal};
+  --repo-semantic-typography-label-xs-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-label-xs-fontSize: {core.typography.fontSize.xs};
+  --repo-semantic-typography-label-xs-fontWeight: {core.typography.fontWeight.medium};
+  --repo-semantic-typography-label-xs-lineHeight: {core.typography.lineHeight.normal};
+  --repo-semantic-typography-label-xs-letterSpacing: {core.typography.letterSpacing.wide};
+  --repo-semantic-typography-label-sm-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-label-sm-fontSize: {core.typography.fontSize.sm};
+  --repo-semantic-typography-label-sm-fontWeight: {core.typography.fontWeight.medium};
+  --repo-semantic-typography-label-sm-lineHeight: {core.typography.lineHeight.normal};
+  --repo-semantic-typography-label-sm-letterSpacing: {core.typography.letterSpacing.wide};
+  --repo-semantic-typography-label-base-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-label-base-fontSize: {core.typography.fontSize.base};
+  --repo-semantic-typography-label-base-fontWeight: {core.typography.fontWeight.medium};
+  --repo-semantic-typography-label-base-lineHeight: {core.typography.lineHeight.normal};
+  --repo-semantic-typography-label-base-letterSpacing: {core.typography.letterSpacing.wide};
+  --repo-semantic-typography-heading-xs-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-heading-xs-fontSize: {core.typography.fontSize.base};
+  --repo-semantic-typography-heading-xs-fontWeight: {core.typography.fontWeight.semibold};
+  --repo-semantic-typography-heading-xs-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-heading-xs-letterSpacing: {core.typography.letterSpacing.tight};
+  --repo-semantic-typography-heading-sm-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-heading-sm-fontSize: {core.typography.fontSize.lg};
+  --repo-semantic-typography-heading-sm-fontWeight: {core.typography.fontWeight.semibold};
+  --repo-semantic-typography-heading-sm-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-heading-sm-letterSpacing: {core.typography.letterSpacing.tight};
+  --repo-semantic-typography-heading-base-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-heading-base-fontSize: {core.typography.fontSize.xl};
+  --repo-semantic-typography-heading-base-fontWeight: {core.typography.fontWeight.semibold};
+  --repo-semantic-typography-heading-base-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-heading-base-letterSpacing: {core.typography.letterSpacing.normal};
+  --repo-semantic-typography-heading-lg-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-heading-lg-fontSize: {core.typography.fontSize.2xl};
+  --repo-semantic-typography-heading-lg-fontWeight: {core.typography.fontWeight.semibold};
+  --repo-semantic-typography-heading-lg-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-heading-lg-letterSpacing: {core.typography.letterSpacing.normal};
+  --repo-semantic-typography-heading-xl-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-heading-xl-fontSize: {core.typography.fontSize.3xl};
+  --repo-semantic-typography-heading-xl-fontWeight: {core.typography.fontWeight.semibold};
+  --repo-semantic-typography-heading-xl-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-heading-xl-letterSpacing: {core.typography.letterSpacing.tight};
+  --repo-semantic-typography-heading-2xl-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-heading-2xl-fontSize: {core.typography.fontSize.4xl};
+  --repo-semantic-typography-heading-2xl-fontWeight: {core.typography.fontWeight.semibold};
+  --repo-semantic-typography-heading-2xl-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-heading-2xl-letterSpacing: {core.typography.letterSpacing.tight};
+  --repo-semantic-typography-heading-3xl-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-heading-3xl-fontSize: {core.typography.fontSize.5xl};
+  --repo-semantic-typography-heading-3xl-fontWeight: {core.typography.fontWeight.semibold};
+  --repo-semantic-typography-heading-3xl-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-heading-3xl-letterSpacing: {core.typography.letterSpacing.tight};
+  --repo-semantic-typography-display-xs-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-display-xs-fontSize: {core.typography.fontSize.3xl};
+  --repo-semantic-typography-display-xs-fontWeight: {core.typography.fontWeight.bold};
+  --repo-semantic-typography-display-xs-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-display-xs-letterSpacing: {core.typography.letterSpacing.tight};
+  --repo-semantic-typography-display-sm-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-display-sm-fontSize: {core.typography.fontSize.4xl};
+  --repo-semantic-typography-display-sm-fontWeight: {core.typography.fontWeight.bold};
+  --repo-semantic-typography-display-sm-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-display-sm-letterSpacing: {core.typography.letterSpacing.tight};
+  --repo-semantic-typography-display-base-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-display-base-fontSize: {core.typography.fontSize.5xl};
+  --repo-semantic-typography-display-base-fontWeight: {core.typography.fontWeight.bold};
+  --repo-semantic-typography-display-base-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-display-base-letterSpacing: {core.typography.letterSpacing.tight};
+  --repo-semantic-typography-display-lg-fontFamily: {core.typography.fontFamily.sans};
+  --repo-semantic-typography-display-lg-fontSize: {core.typography.fontSize.6xl};
+  --repo-semantic-typography-display-lg-fontWeight: {core.typography.fontWeight.bold};
+  --repo-semantic-typography-display-lg-lineHeight: {core.typography.lineHeight.tight};
+  --repo-semantic-typography-display-lg-letterSpacing: {core.typography.letterSpacing.tight};
+}
+
+}

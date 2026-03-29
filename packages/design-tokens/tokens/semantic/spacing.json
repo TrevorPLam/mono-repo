@@ -1,0 +1,43 @@
+{
+  "$description": "Intent-level spacing aliases. Semantic spacing for common layout patterns.",
+  "stack": {
+    "xs": { "$value": "{core.spacing.1}", "$type": "dimension", "$description": "Extra small vertical spacing" },
+    "sm": { "$value": "{core.spacing.2}", "$type": "dimension", "$description": "Small vertical spacing" },
+    "base": { "$value": "{core.spacing.3}", "$type": "dimension", "$description": "Base vertical spacing" },
+    "md": { "$value": "{core.spacing.4}", "$type": "dimension", "$description": "Medium vertical spacing" },
+    "lg": { "$value": "{core.spacing.6}", "$type": "dimension", "$description": "Large vertical spacing" },
+    "xl": { "$value": "{core.spacing.8}", "$type": "dimension", "$description": "Extra large vertical spacing" },
+    "2xl": { "$value": "{core.spacing.12}", "$type": "dimension", "$description": "2x large vertical spacing" },
+    "3xl": { "$value": "{core.spacing.16}", "$type": "dimension", "$description": "3x large vertical spacing" }
+  },
+  "inline": {
+    "xs": { "$value": "{core.spacing.1}", "$type": "dimension", "$description": "Extra small horizontal spacing" },
+    "sm": { "$value": "{core.spacing.2}", "$type": "dimension", "$description": "Small horizontal spacing" },
+    "base": { "$value": "{core.spacing.3}", "$type": "dimension", "$description": "Base horizontal spacing" },
+    "md": { "$value": "{core.spacing.4}", "$type": "dimension", "$description": "Medium horizontal spacing" },
+    "lg": { "$value": "{core.spacing.6}", "$type": "dimension", "$description": "Large horizontal spacing" },
+    "xl": { "$value": "{core.spacing.8}", "$type": "dimension", "$description": "Extra large horizontal spacing" },
+    "2xl": { "$value": "{core.spacing.12}", "$type": "dimension", "$description": "2x large horizontal spacing" },
+    "3xl": { "$value": "{core.spacing.16}", "$type": "dimension", "$description": "3x large horizontal spacing" }
+  },
+  "inset": {
+    "xs": { "$value": "{core.spacing.1}", "$type": "dimension", "$description": "Extra small inset spacing" },
+    "sm": { "$value": "{core.spacing.2}", "$type": "dimension", "$description": "Small inset spacing" },
+    "base": { "$value": "{core.spacing.3}", "$type": "dimension", "$description": "Base inset spacing" },
+    "md": { "$value": "{core.spacing.4}", "$type": "dimension", "$description": "Medium inset spacing" },
+    "lg": { "$value": "{core.spacing.6}", "$type": "dimension", "$description": "Large inset spacing" },
+    "xl": { "$value": "{core.spacing.8}", "$type": "dimension", "$description": "Extra large inset spacing" },
+    "2xl": { "$value": "{core.spacing.12}", "$type": "dimension", "$description": "2x large inset spacing" },
+    "3xl": { "$value": "{core.spacing.16}", "$type": "dimension", "$description": "3x large inset spacing" }
+  },
+  "gap": {
+    "xs": { "$value": "{core.spacing.1}", "$type": "dimension", "$description": "Extra small gap spacing" },
+    "sm": { "$value": "{core.spacing.2}", "$type": "dimension", "$description": "Small gap spacing" },
+    "base": { "$value": "{core.spacing.3}", "$type": "dimension", "$description": "Base gap spacing" },
+    "md": { "$value": "{core.spacing.4}", "$type": "dimension", "$description": "Medium gap spacing" },
+    "lg": { "$value": "{core.spacing.6}", "$type": "dimension", "$description": "Large gap spacing" },
+    "xl": { "$value": "{core.spacing.8}", "$type": "dimension", "$description": "Extra large gap spacing" },
+    "2xl": { "$value": "{core.spacing.12}", "$type": "dimension", "$description": "2x large gap spacing" },
+    "3xl": { "$value": "{core.spacing.16}", "$type": "dimension", "$description": "3x large gap spacing" }
+  }
+}

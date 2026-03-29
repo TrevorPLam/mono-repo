@@ -1,0 +1,58 @@
+{
+  "$description": "Dark-mode semantic overlay. Overrides semantic values for dark theme.",
+  "surface": {
+    "canvas": {
+      "primary": { "$value": "{core.color.gray.900}", "$type": "color", "$description": "Main canvas background in dark mode" },
+      "secondary": { "$value": "{core.color.gray.800}", "$type": "color", "$description": "Secondary canvas background in dark mode" },
+      "tertiary": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Tertiary canvas background in dark mode" }
+    },
+    "subtle": {
+      "primary": { "$value": "{core.color.gray.800}", "$type": "color", "$description": "Subtle background in dark mode" },
+      "secondary": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Secondary subtle background in dark mode" },
+      "accent": { "$value": "{core.color.blue.900}", "$type": "color", "$description": "Accent subtle background in dark mode" }
+    },
+    "elevated": {
+      "primary": { "$value": "{core.color.gray.800}", "$type": "color", "$description": "Elevated surface in dark mode" },
+      "secondary": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Secondary elevated surface in dark mode" },
+      "overlay": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Overlay surface in dark mode" }
+    }
+  },
+  "text": {
+    "primary": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Primary text in dark mode" },
+    "secondary": { "$value": "{core.color.gray.300}", "$type": "color", "$description": "Secondary text in dark mode" },
+    "tertiary": { "$value": "{core.color.gray.400}", "$type": "color", "$description": "Tertiary text in dark mode" },
+    "muted": { "$value": "{core.color.gray.500}", "$type": "color", "$description": "Muted text in dark mode" },
+    "subtle": { "$value": "{core.color.gray.600}", "$type": "color", "$description": "Subtle text in dark mode" }
+  },
+  "border": {
+    "primary": { "$value": "{core.color.gray.600}", "$type": "color", "$description": "Primary border in dark mode" },
+    "secondary": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Secondary border in dark mode" },
+    "tertiary": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Tertiary border in dark mode" },
+    "subtle": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Subtle border in dark mode" },
+    "strong": { "$value": "{core.color.gray.500}", "$type": "color", "$description": "Strong border in dark mode" }
+  },
+  "icon": {
+    "primary": { "$value": "{semantic.text.primary}", "$type": "color", "$description": "Primary icon in dark mode" },
+    "secondary": { "$value": "{semantic.text.secondary}", "$type": "color", "$description": "Secondary icon in dark mode" },
+    "muted": { "$value": "{semantic.text.muted}", "$type": "color", "$description": "Muted icon in dark mode" },
+    "subtle": { "$value": "{semantic.text.subtle}", "$type": "color", "$description": "Subtle icon in dark mode" }
+  },
+  "focus": {
+    "ring": {
+      "color": { "$value": "{core.color.blue.400}", "$type": "color", "$description": "Focus ring color in dark mode" }
+    },
+    "outline": {
+      "color": { "$value": "{core.color.blue.400}", "$type": "color", "$description": "Focus outline color in dark mode" }
+    },
+    "visible": {
+      "color": { "$value": "{core.color.blue.400}", "$type": "color", "$description": "Visible focus color in dark mode" },
+      "background": { "$value": "{core.color.blue.900}", "$type": "color", "$description": "Visible focus background in dark mode" }
+    }
+  },
+  "interactive": {
+    "hover": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Interactive hover in dark mode" },
+    "active": { "$value": "{core.color.gray.600}", "$type": "color", "$description": "Interactive active in dark mode" },
+    "focus": { "$value": "{core.color.blue.800}", "$type": "color", "$description": "Interactive focus in dark mode" },
+    "selected": { "$value": "{core.color.blue.800}", "$type": "color", "$description": "Selected state in dark mode" }
+  }
+}

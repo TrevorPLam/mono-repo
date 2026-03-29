@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://design-tokens.repo/schemas/component-token-file.schema.json",
+  "title": "Component Token File Schema",
+  "description": "Validates sparse component token files",
+  "type": "object",
+  "properties": {
+    "$description": {
+      "type": "string",
+      "description": "Description of the component token file"
+    }
+  },
+  "patternProperties": {
+    "^(height|padding|gap|radius|border|shadow|transition|surface)$": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z][a-zA-Z0-9_]*$": {
+          "oneOf": [
+            {
+              "type": "object",
+              "patternProperties": {
+                "^[a-zA-Z][a-zA-Z0-9_]*$": {
+                  "$ref": "#/definitions/componentToken"
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "$ref": "#/definitions/componentToken"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "componentToken": {
+      "type": "object",
+      "properties": {
+        "$value": {
+          "type": "string",
+          "pattern": "^\\{[a-zA-Z][a-zA-Z0-9._]*\\}$",
+          "description": "Reference to core or semantic token"
+        },
+        "$type": {
+          "type": "string",
+          "enum": ["color", "dimension", "fontFamily", "fontWeight", "number", "duration", "cubicBezier", "shadow", "strokeWidth", "strokeStyle"],
+          "description": "Token type"
+        },
+        "$description": {
+          "type": "string",
+          "description": "Token description"
+        }
+      },
+      "required": ["$value", "$type"],
+      "additionalProperties": false
+    }
+  }
+}

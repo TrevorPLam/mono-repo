@@ -1,0 +1,41 @@
+{
+  "$description": "Semantic intent/state colors. Maps primitive colors to meaningful interface states.",
+  "accent": {
+    "primary": { "$value": "{core.color.blue.500}", "$type": "color", "$description": "Primary accent color for main actions" },
+    "secondary": { "$value": "{core.color.gray.500}", "$type": "color", "$description": "Secondary accent color" },
+    "tertiary": { "$value": "{core.color.gray.400}", "$type": "color", "$description": "Tertiary accent color" }
+  },
+  "interactive": {
+    "primary": { "$value": "{core.color.blue.500}", "$type": "color", "$description": "Primary interactive element" },
+    "primaryHover": { "$value": "{core.color.blue.600}", "$type": "color", "$description": "Primary interactive hover state" },
+    "primaryActive": { "$value": "{core.color.blue.700}", "$type": "color", "$description": "Primary interactive active state" },
+    "secondary": { "$value": "{core.color.gray.500}", "$type": "color", "$description": "Secondary interactive element" },
+    "secondaryHover": { "$value": "{core.color.gray.600}", "$type": "color", "$description": "Secondary interactive hover state" },
+    "secondaryActive": { "$value": "{core.color.gray.700}", "$type": "color", "$description": "Secondary interactive active state" }
+  },
+  "success": {
+    "base": { "$value": "{core.color.green.500}", "$type": "color", "$description": "Success state color" },
+    "light": { "$value": "{core.color.green.50}", "$type": "color", "$description": "Light success background" },
+    "dark": { "$value": "{core.color.green.700}", "$type": "color", "$description": "Dark success text" }
+  },
+  "warning": {
+    "base": { "$value": "{core.color.yellow.500}", "$type": "color", "$description": "Warning state color" },
+    "light": { "$value": "{core.color.yellow.50}", "$type": "color", "$description": "Light warning background" },
+    "dark": { "$value": "{core.color.yellow.700}", "$type": "color", "$description": "Dark warning text" }
+  },
+  "danger": {
+    "base": { "$value": "{core.color.red.500}", "$type": "color", "$description": "Danger/error state color" },
+    "light": { "$value": "{core.color.red.50}", "$type": "color", "$description": "Light danger background" },
+    "dark": { "$value": "{core.color.red.700}", "$type": "color", "$description": "Dark danger text" }
+  },
+  "info": {
+    "base": { "$value": "{core.color.blue.500}", "$type": "color", "$description": "Info state color" },
+    "light": { "$value": "{core.color.blue.50}", "$type": "color", "$description": "Light info background" },
+    "dark": { "$value": "{core.color.blue.700}", "$type": "color", "$description": "Dark info text" }
+  },
+  "disabled": {
+    "text": { "$value": "{core.color.gray.300}", "$type": "color", "$description": "Disabled text color" },
+    "background": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Disabled background color" },
+    "border": { "$value": "{core.color.gray.200}", "$type": "color", "$description": "Disabled border color" }
+  }
+}

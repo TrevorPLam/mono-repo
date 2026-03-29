@@ -1,0 +1,69 @@
+name: "Chromatic UI Package"
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'packages/ui/**'
+      - 'packages/design-tokens/**'
+      - '.github/workflows/chromatic.yml'
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - 'packages/ui/**'
+      - 'packages/design-tokens/**'
+      - '.github/workflows/chromatic.yml'
+
+jobs:
+  chromatic:
+    name: Run Chromatic for @repo/ui
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'packages/ui/package-lock.json'
+
+      - name: Install dependencies
+        working-directory: packages/ui
+        run: npm ci
+
+      - name: Build design tokens dependency
+        working-directory: packages/design-tokens
+        run: npm ci && npm run build
+
+      - name: Build UI package
+        working-directory: packages/ui
+        run: npm run build
+
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          # Chromatic project token (configured in repository secrets)
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN_UI }}
+          workingDir: packages/ui
+          # Only run on UI package changes
+          buildScriptName: build-storybook
+          # Configure for monorepo
+          exitZeroOnChanges: false
+          # Enable TurboSnap for faster builds
+          turboSnap:
+            # Only test changed stories
+            onlyStoryFiles: true
+          # Configure viewports for responsive testing
+          viewport: [320, 768, 1024, 1440]
+        env:
+          # Environment variables for Chromatic
+          NODE_ENV: 'production'
+          CI: true

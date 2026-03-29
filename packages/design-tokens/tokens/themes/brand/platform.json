@@ -1,0 +1,60 @@
+{
+  "$description": "Platform-brand semantic overlay. Brand-specific overrides for platform identity.",
+  "color": {
+    "accent": {
+      "primary": { "$value": "{core.color.purple.600}", "$type": "color", "$description": "Platform primary accent color" },
+      "secondary": { "$value": "{core.color.gray.600}", "$type": "color", "$description": "Platform secondary accent color" },
+      "tertiary": { "$value": "{core.color.purple.500}", "$type": "color", "$description": "Platform tertiary accent color" }
+    },
+    "interactive": {
+      "primary": { "$value": "{core.color.purple.600}", "$type": "color", "$description": "Platform primary interactive color" },
+      "primaryHover": { "$value": "{core.color.purple.700}", "$type": "color", "$description": "Platform primary interactive hover" },
+      "primaryActive": { "$value": "{core.color.purple.800}", "$type": "color", "$description": "Platform primary interactive active" }
+    }
+  },
+  "focus": {
+    "ring": {
+      "color": { "$value": "{core.color.purple.600}", "$type": "color", "$description": "Platform focus ring color" }
+    },
+    "outline": {
+      "color": { "$value": "{core.color.purple.600}", "$type": "color", "$description": "Platform focus outline color" }
+    },
+    "visible": {
+      "color": { "$value": "{core.color.purple.600}", "$type": "color", "$description": "Platform visible focus color" },
+      "background": { "$value": "{core.color.purple.50}", "$type": "color", "$description": "Platform visible focus background" }
+    }
+  },
+  "border": {
+    "accent": {
+      "primary": { "$value": "{core.color.purple.600}", "$type": "color", "$description": "Platform primary accent border" },
+      "secondary": { "$value": "{core.color.purple.400}", "$type": "color", "$description": "Platform secondary accent border" },
+      "tertiary": { "$value": "{core.color.purple.300}", "$type": "color", "$description": "Platform tertiary accent border" }
+    },
+    "interactive": {
+      "primary": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Platform primary interactive border" },
+      "primaryHover": { "$value": "{semantic.color.interactive.primaryHover}", "$type": "color", "$description": "Platform primary interactive hover border" },
+      "primaryActive": { "$value": "{semantic.color.interactive.primaryActive}", "$type": "color", "$description": "Platform primary interactive active border" }
+    }
+  },
+  "surface": {
+    "accent": { "$value": "{core.color.purple.50}", "$type": "color", "$description": "Platform accent surface" }
+  },
+  "text": {
+    "link": {
+      "primary": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Platform primary link color" },
+      "hover": { "$value": "{semantic.color.interactive.primaryHover}", "$type": "color", "$description": "Platform link hover color" }
+    },
+    "accent": {
+      "primary": { "$value": "{semantic.color.accent.primary}", "$type": "color", "$description": "Platform primary accent text" },
+      "secondary": { "$value": "{semantic.color.accent.secondary}", "$type": "color", "$description": "Platform secondary accent text" },
+      "tertiary": { "$value": "{semantic.color.accent.tertiary}", "$type": "color", "$description": "Platform tertiary accent text" }
+    }
+  },
+  "icon": {
+    "accent": {
+      "primary": { "$value": "{semantic.color.accent.primary}", "$type": "color", "$description": "Platform primary accent icon" },
+      "secondary": { "$value": "{semantic.color.accent.secondary}", "$type": "color", "$description": "Platform secondary accent icon" },
+      "tertiary": { "$value": "{semantic.color.accent.tertiary}", "$type": "color", "$description": "Platform tertiary accent icon" }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$description": "Responsive breakpoint primitives. Breakpoint definitions for responsive design.",
+  "sm": { "$value": "640px", "$type": "dimension", "$description": "Small screens and up" },
+  "md": { "$value": "768px", "$type": "dimension", "$description": "Medium screens and up" },
+  "lg": { "$value": "1024px", "$type": "dimension", "$description": "Large screens and up" },
+  "xl": { "$value": "1280px", "$type": "dimension", "$description": "Extra large screens and up" },
+  "2xl": { "$value": "1536px", "$type": "dimension", "$description": "2x large screens and up" }
+}

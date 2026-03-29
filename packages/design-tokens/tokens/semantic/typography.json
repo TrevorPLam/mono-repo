@@ -1,0 +1,163 @@
+{
+  "$description": "Intent-level typography tokens. Semantic text styles for common UI patterns.",
+  "body": {
+    "xs": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.xs}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.normal}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.normal}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.normal}", "$type": "dimension" },
+      "$description": "Extra small body text"
+    },
+    "sm": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.sm}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.normal}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.normal}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.normal}", "$type": "dimension" },
+      "$description": "Small body text"
+    },
+    "base": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.base}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.normal}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.normal}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.normal}", "$type": "dimension" },
+      "$description": "Base body text"
+    },
+    "lg": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.lg}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.normal}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.normal}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.normal}", "$type": "dimension" },
+      "$description": "Large body text"
+    },
+    "xl": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.normal}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.relaxed}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.normal}", "$type": "dimension" },
+      "$description": "Extra large body text"
+    }
+  },
+  "label": {
+    "xs": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.xs}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.medium}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.normal}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.wide}", "$type": "dimension" },
+      "$description": "Extra small label text"
+    },
+    "sm": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.sm}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.medium}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.normal}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.wide}", "$type": "dimension" },
+      "$description": "Small label text"
+    },
+    "base": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.base}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.medium}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.normal}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.wide}", "$type": "dimension" },
+      "$description": "Base label text"
+    }
+  },
+  "heading": {
+    "xs": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.base}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.semibold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.tight}", "$type": "dimension" },
+      "$description": "Extra small heading"
+    },
+    "sm": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.lg}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.semibold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.tight}", "$type": "dimension" },
+      "$description": "Small heading"
+    },
+    "base": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.semibold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.normal}", "$type": "dimension" },
+      "$description": "Base heading"
+    },
+    "lg": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.2xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.semibold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.normal}", "$type": "dimension" },
+      "$description": "Large heading"
+    },
+    "xl": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.3xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.semibold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.tight}", "$type": "dimension" },
+      "$description": "Extra large heading"
+    },
+    "2xl": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.4xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.semibold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.tight}", "$type": "dimension" },
+      "$description": "2x large heading"
+    },
+    "3xl": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.5xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.semibold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.tight}", "$type": "dimension" },
+      "$description": "3x large heading"
+    }
+  },
+  "display": {
+    "xs": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.3xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.bold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.tight}", "$type": "dimension" },
+      "$description": "Extra small display text"
+    },
+    "sm": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.4xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.bold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.tight}", "$type": "dimension" },
+      "$description": "Small display text"
+    },
+    "base": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.5xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.bold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.tight}", "$type": "dimension" },
+      "$description": "Base display text"
+    },
+    "lg": {
+      "fontFamily": { "$value": "{core.typography.fontFamily.sans}", "$type": "fontFamily" },
+      "fontSize": { "$value": "{core.typography.fontSize.6xl}", "$type": "dimension" },
+      "fontWeight": { "$value": "{core.typography.fontWeight.bold}", "$type": "fontWeight" },
+      "lineHeight": { "$value": "{core.typography.lineHeight.tight}", "$type": "number" },
+      "letterSpacing": { "$value": "{core.typography.letterSpacing.tight}", "$type": "dimension" },
+      "$description": "Large display text"
+    }
+  }
+}

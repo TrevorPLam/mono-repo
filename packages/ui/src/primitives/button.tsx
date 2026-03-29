@@ -1,7 +1,8 @@
 import forwardRef from '../internal/forward-ref';
 import { CommonProps, SizeProps, VariantProps } from '../types/common-props';
-import { buttonVariants } from './button.css';
-import { clsx } from 'clsx';
+import { buttonVariants } from './button.simple.css';
+import { clsx } from '../internal/classnames';
+import { tokens } from '../styles/tokens';
 
 export interface ButtonProps extends 
   CommonProps,
@@ -18,9 +19,9 @@ export interface ButtonProps extends
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ 
     className,
-    size,
-    tone,
-    variant,
+    size = 'md',
+    tone = 'neutral',
+    variant = 'solid',
     disabled,
     loading,
     type = 'button',
@@ -28,21 +29,38 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     children,
     ...props 
   }, ref) => {
+    const getStyles = () => {
+      const styles: React.CSSProperties = {
+        ...buttonVariants.base,
+        ...buttonVariants.sizes[size],
+        ...buttonVariants.tones[tone],
+        ...buttonVariants.variants[variant],
+      };
+
+      if (disabled) {
+        styles.opacity = '0.6';
+        styles.cursor = 'not-allowed';
+      }
+
+      return styles;
+    };
+
     return (
       <button
         ref={ref}
         type={type}
         disabled={disabled || loading}
         onClick={onClick}
-        className={clsx(buttonVariants({ size, tone, variant }), className)}
+        className={clsx('button', className)}
+        style={getStyles()}
         {...props}
       >
         {loading && (
           <span
             style={{
-              width: '1em',
-              height: '1em',
-              border: '2px solid currentColor',
+              width: tokens.sizing.md,
+              height: tokens.sizing.md,
+              border: `2px solid currentColor`,
               borderTopColor: 'transparent',
               borderRadius: '50%',
               animation: 'spin 1s linear infinite',

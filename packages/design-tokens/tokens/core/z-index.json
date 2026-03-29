@@ -1,0 +1,11 @@
+{
+  "$description": "Canonical layering scale. Z-index values for proper element stacking.",
+  "base": { "$value": "0", "$type": "number", "$description": "Base layer" },
+  "raised": { "$value": "10", "$type": "number", "$description": "Raised elements" },
+  "dropdown": { "$value": "1000", "$type": "number", "$description": "Dropdown menus" },
+  "sticky": { "$value": "1100", "$type": "number", "$description": "Sticky positioned elements" },
+  "modal": { "$value": "1200", "$type": "number", "$description": "Modal overlays" },
+  "popover": { "$value": "1300", "$type": "number", "$description": "Popover tooltips" },
+  "toast": { "$value": "1400", "$type": "number", "$description": "Toast notifications" },
+  "tooltip": { "$value": "1500", "$type": "number", "$description": "Tooltips" }
+}

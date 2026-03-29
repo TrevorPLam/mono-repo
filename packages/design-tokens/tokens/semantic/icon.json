@@ -1,0 +1,32 @@
+{
+  "$description": "Semantic icon colors where icon meaning differs from text meaning.",
+  "primary": { "$value": "{semantic.text.primary}", "$type": "color", "$description": "Primary icon color" },
+  "secondary": { "$value": "{semantic.text.secondary}", "$type": "color", "$description": "Secondary icon color" },
+  "muted": { "$value": "{semantic.text.muted}", "$type": "color", "$description": "Muted icon color" },
+  "subtle": { "$value": "{semantic.text.subtle}", "$type": "color", "$description": "Subtle icon color" },
+  "inverse": {
+    "primary": { "$value": "{semantic.text.inverse.primary}", "$type": "color", "$description": "Primary inverse icon" },
+    "secondary": { "$value": "{semantic.text.inverse.secondary}", "$type": "color", "$description": "Secondary inverse icon" },
+    "tertiary": { "$value": "{semantic.text.inverse.tertiary}", "$type": "color", "$description": "Tertiary inverse icon" }
+  },
+  "interactive": {
+    "primary": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Primary interactive icon" },
+    "primaryHover": { "$value": "{semantic.color.interactive.primaryHover}", "$type": "color", "$description": "Primary interactive hover icon" },
+    "primaryActive": { "$value": "{semantic.color.interactive.primaryActive}", "$type": "color", "$description": "Primary interactive active icon" },
+    "secondary": { "$value": "{semantic.color.interactive.secondary}", "$type": "color", "$description": "Secondary interactive icon" },
+    "secondaryHover": { "$value": "{semantic.color.interactive.secondaryHover}", "$type": "color", "$description": "Secondary interactive hover icon" },
+    "secondaryActive": { "$value": "{semantic.color.interactive.secondaryActive}", "$type": "color", "$description": "Secondary interactive active icon" }
+  },
+  "status": {
+    "success": { "$value": "{semantic.color.success.base}", "$type": "color", "$description": "Success icon color" },
+    "warning": { "$value": "{semantic.color.warning.base}", "$type": "color", "$description": "Warning icon color" },
+    "danger": { "$value": "{semantic.color.danger.base}", "$type": "color", "$description": "Danger icon color" },
+    "info": { "$value": "{semantic.color.info.base}", "$type": "color", "$description": "Info icon color" }
+  },
+  "accent": {
+    "primary": { "$value": "{semantic.color.accent.primary}", "$type": "color", "$description": "Primary accent icon" },
+    "secondary": { "$value": "{semantic.color.accent.secondary}", "$type": "color", "$description": "Secondary accent icon" },
+    "tertiary": { "$value": "{semantic.color.accent.tertiary}", "$type": "color", "$description": "Tertiary accent icon" }
+  },
+  "disabled": { "$value": "{semantic.color.disabled.text}", "$type": "color", "$description": "Disabled icon color" }
+}

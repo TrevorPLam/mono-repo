@@ -1,0 +1,310 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/blocks';
+import { tokens } from '@repo/design-tokens';
+
+<Meta title="Foundations/Design Tokens" />
+
+# Design Tokens
+
+Design tokens are the single source of truth for all visual properties in our design system. They ensure consistency across all components and applications while enabling systematic theming and scalability.
+
+## What are Design Tokens?
+
+Design tokens are named entities that store visual design information. They are used in place of hard-coded values (such as hex codes for colors or pixel values for spacing) to maintain a scalable and consistent visual system.
+
+## Token Categories
+
+### Colors
+
+Color tokens define the color palette used throughout the design system. They include semantic colors for different contexts and UI states.
+
+#### Primary Colors
+
+```javascript
+// Raw color values
+tokens.colors.blue50 = '#eff6ff';
+tokens.colors.blue500 = '#3b82f6';
+tokens.colors.blue900 = '#1e3a8a';
+
+// Semantic color mapping
+tokens.semanticColors.primary = tokens.colors.blue500;
+tokens.semanticColors.primaryHover = tokens.colors.blue600;
+```
+
+#### Semantic Colors
+
+Semantic colors provide context-specific meanings:
+
+- **Primary**: Main brand color for primary actions
+- **Secondary**: Secondary actions and less prominent elements
+- **Accent**: Emphasis and highlight colors
+- **Success**: Positive feedback and success states
+- **Warning**: Caution and warning states
+- **Error**: Error states and destructive actions
+- **Neutral**: Default text and border colors
+
+### Typography
+
+Typography tokens define the typographic scale and hierarchy.
+
+```javascript
+// Font sizes
+tokens.typography.sizes.xs = '0.75rem';    // 12px
+tokens.typography.sizes.sm = '0.875rem';   // 14px
+tokens.typography.sizes.md = '1rem';       // 16px
+tokens.typography.sizes.lg = '1.125rem';   // 18px
+tokens.typography.sizes.xl = '1.25rem';    // 20px
+
+// Font weights
+tokens.typography.weights.light = '300';
+tokens.typography.weights.normal = '400';
+tokens.typography.weights.medium = '500';
+tokens.typography.weights.semibold = '600';
+tokens.typography.weights.bold = '700';
+
+// Line heights
+tokens.typography.leading.tight = '1.25';
+tokens.typography.leading.normal = '1.5';
+tokens.typography.leading.relaxed = '1.75';
+```
+
+### Spacing
+
+Spacing tokens create a consistent spatial rhythm throughout the interface.
+
+```javascript
+tokens.spacing.xs = '0.25rem';   // 4px
+tokens.spacing.sm = '0.5rem';    // 8px
+tokens.spacing.md = '1rem';     // 16px
+tokens.spacing.lg = '1.5rem';    // 24px
+tokens.spacing.xl = '2rem';     // 32px
+tokens.spacing.xxl = '3rem';    // 48px
+```
+
+### Sizing
+
+Sizing tokens define consistent dimensions for components and layout elements.
+
+```javascript
+tokens.sizing.xs = '0.75rem';    // 12px
+tokens.sizing.sm = '1rem';       // 16px
+tokens.sizing.md = '1.25rem';    // 20px
+tokens.sizing.lg = '1.5rem';     // 24px
+tokens.sizing.xl = '2rem';       // 32px
+```
+
+### Border Radius
+
+Border radius tokens define consistent corner rounding throughout the system.
+
+```javascript
+tokens.borderRadius.none = '0';
+tokens.borderRadius.sm = '0.125rem';   // 2px
+tokens.borderRadius.md = '0.375rem';  // 6px
+tokens.borderRadius.lg = '0.5rem';    // 8px
+tokens.borderRadius.xl = '0.75rem';   // 12px
+tokens.borderRadius.full = '9999px';
+```
+
+### Shadows
+
+Shadow tokens create depth and hierarchy through elevation.
+
+```javascript
+tokens.shadows.sm = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
+tokens.shadows.md = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+tokens.shadows.lg = '0 10px 15px -3px rgba(0, 0, 0, 0.1)';
+tokens.shadows.xl = '0 20px 25px -5px rgba(0, 0, 0, 0.1)';
+```
+
+### Motion
+
+Motion tokens define consistent animation timing and easing functions.
+
+```javascript
+tokens.motion.durations.fast = '150ms';
+tokens.motion.durations.normal = '300ms';
+tokens.motion.durations.slow = '500ms';
+
+tokens.motion.easing.ease = 'cubic-bezier(0.4, 0, 0.2, 1)';
+tokens.motion.easing.easeIn = 'cubic-bezier(0.4, 0, 1, 1)';
+tokens.motion.easing.easeOut = 'cubic-bezier(0, 0, 0.2, 1)';
+```
+
+## Using Design Tokens
+
+### In Components
+
+Design tokens are automatically integrated into all UI components. When you use a component, it automatically applies the appropriate tokens:
+
+```jsx
+// These buttons use design tokens internally
+<Button tone="primary" size="md">
+  Primary Button
+</Button>
+
+<Text size="lg" tone="secondary">
+  Large secondary text
+</Text>
+```
+
+### In Custom Styles
+
+You can access design tokens directly for custom styling:
+
+```jsx
+import { tokens } from '@repo/design-tokens';
+
+const customStyles = {
+  backgroundColor: tokens.semanticColors.primary,
+  padding: tokens.spacing.md,
+  borderRadius: tokens.borderRadius.md,
+  boxShadow: tokens.shadows.md,
+};
+```
+
+### In CSS
+
+Design tokens are available as CSS custom properties:
+
+```css
+.custom-component {
+  background-color: var(--color-primary);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+```
+
+## Token Architecture
+
+### Token Structure
+
+Our token system follows a three-tier architecture:
+
+1. **Base Tokens**: Raw values (colors, sizes, etc.)
+2. **Semantic Tokens**: Context-specific meanings
+3. **Component Tokens**: Component-specific variations
+
+### Naming Convention
+
+Tokens use a consistent naming structure:
+
+```
+{category}.{subcategory}.{property}.{variant}
+
+Examples:
+- colors.blue.500
+- spacing.md
+- typography.sizes.lg
+- semanticColors.primary
+- borderRadius.md
+```
+
+## Theme Support
+
+Design tokens support multiple themes through the semantic layer. The base tokens remain constant, while semantic tokens can be redefined for different themes.
+
+### Light Theme (Default)
+
+```javascript
+semanticColors: {
+  primary: '#3b82f6',
+  background: '#ffffff',
+  text: '#111827',
+}
+```
+
+### Dark Theme
+
+```javascript
+semanticColors: {
+  primary: '#60a5fa',
+  background: '#111827',
+  text: '#f9fafb',
+}
+```
+
+## Best Practices
+
+### 1. Use Semantic Tokens
+
+Prefer semantic tokens over base tokens:
+
+```jsx
+// ✅ Good - uses semantic meaning
+backgroundColor: tokens.semanticColors.primary
+
+// ❌ Avoid - hard-coded color
+backgroundColor: '#3b82f6'
+```
+
+### 2. Maintain Consistency
+
+Use the same token values for similar purposes across components:
+
+```jsx
+// ✅ Consistent spacing
+padding: tokens.spacing.md;
+margin: tokens.spacing.md;
+
+// ❌ Inconsistent spacing
+padding: '16px';
+margin: '1rem';
+```
+
+### 3. Consider Accessibility
+
+All color tokens meet WCAG 2.1 AA contrast requirements. When creating custom components, ensure you maintain proper contrast ratios.
+
+### 4. Document Usage
+
+When introducing new tokens, document their intended use cases and context.
+
+## Token Reference
+
+### Color Tokens
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `semanticColors.primary` | `#3b82f6` | Primary actions, brand elements |
+| `semanticColors.secondary` | `#6b7280` | Secondary actions, less prominent elements |
+| `semanticColors.success` | `#10b981` | Success states, positive feedback |
+| `semanticColors.warning` | `#f59e0b` | Warning states, caution |
+| `semanticColors.error` | `#ef4444` | Error states, destructive actions |
+
+### Spacing Tokens
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `spacing.xs` | `4px` | Tight spacing, compact layouts |
+| `spacing.sm` | `8px` | Small gaps, element spacing |
+| `spacing.md` | `16px` | Default spacing, section padding |
+| `spacing.lg` | `24px` | Large spacing, section separation |
+| `spacing.xl` | `32px` | Extra large spacing, page layout |
+
+### Typography Tokens
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `typography.sizes.xs` | `12px` | Caption text, fine print |
+| `typography.sizes.sm` | `14px` | Small text, labels |
+| `typography.sizes.md` | `16px` | Body text, default size |
+| `typography.sizes.lg` | `18px` | Large text, subheadings |
+| `typography.sizes.xl` | `20px` | Extra large text, headings |
+
+## Contributing to Design Tokens
+
+When adding new design tokens:
+
+1. **Evaluate Need**: Ensure the token serves a real purpose and isn't covered by existing tokens
+2. **Follow Naming**: Use the established naming convention
+3. **Document**: Add documentation for usage and context
+4. **Test**: Verify the token works across all themes and contexts
+5. **Review**: Get design and engineering review before merging
+
+## Tools and Resources
+
+- **Token Inspector**: Use browser dev tools to inspect applied tokens
+- **Theme Switcher**: Test components across different themes
+- **Accessibility Checker**: Verify contrast ratios for color tokens
+- **Design Documentation**: Refer to Figma design system for visual reference

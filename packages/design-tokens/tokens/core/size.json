@@ -1,0 +1,26 @@
+{
+  "$description": "Shared size primitives. Icon sizes, control heights, and reusable object dimensions.",
+  "icon": {
+    "xs": { "$value": "0.75rem", "$type": "dimension", "$description": "Extra small icon (12px)" },
+    "sm": { "$value": "1rem", "$type": "dimension", "$description": "Small icon (16px)" },
+    "base": { "$value": "1.25rem", "$type": "dimension", "$description": "Base icon (20px)" },
+    "lg": { "$value": "1.5rem", "$type": "dimension", "$description": "Large icon (24px)" },
+    "xl": { "$value": "2rem", "$type": "dimension", "$description": "Extra large icon (32px)" },
+    "2xl": { "$value": "2.5rem", "$type": "dimension", "$description": "2x large icon (40px)" }
+  },
+  "control": {
+    "height": {
+      "sm": { "$value": "2rem", "$type": "dimension", "$description": "Small control height (32px)" },
+      "base": { "$value": "2.5rem", "$type": "dimension", "$description": "Base control height (40px)" },
+      "lg": { "$value": "3rem", "$type": "dimension", "$description": "Large control height (48px)" }
+    }
+  },
+  "container": {
+    "xs": { "$value": "20rem", "$type": "dimension", "$description": "Extra small container (320px)" },
+    "sm": { "$value": "24rem", "$type": "dimension", "$description": "Small container (384px)" },
+    "base": { "$value": "32rem", "$type": "dimension", "$description": "Base container (512px)" },
+    "lg": { "$value": "48rem", "$type": "dimension", "$description": "Large container (768px)" },
+    "xl": { "$value": "64rem", "$type": "dimension", "$description": "Extra large container (1024px)" },
+    "2xl": { "$value": "80rem", "$type": "dimension", "$description": "2x large container (1280px)" }
+  }
+}

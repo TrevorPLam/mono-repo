@@ -1,0 +1,18 @@
+{
+  "$description": "Base spacing scale primitives. Foundation for layout and component spacing.",
+  "0": { "$value": "0", "$type": "dimension", "$description": "No spacing" },
+  "px": { "$value": "1px", "$type": "dimension", "$description": "Single pixel spacing" },
+  "0_5": { "$value": "2px", "$type": "dimension", "$description": "Half base unit (4px / 2)" },
+  "1": { "$value": "4px", "$type": "dimension", "$description": "Base spacing unit" },
+  "1_5": { "$value": "6px", "$type": "dimension", "$description": "1.5x base unit" },
+  "2": { "$value": "8px", "$type": "dimension", "$description": "2x base unit" },
+  "3": { "$value": "12px", "$type": "dimension", "$description": "3x base unit" },
+  "4": { "$value": "16px", "$type": "dimension", "$description": "4x base unit" },
+  "6": { "$value": "24px", "$type": "dimension", "$description": "6x base unit" },
+  "8": { "$value": "32px", "$type": "dimension", "$description": "8x base unit" },
+  "10": { "$value": "40px", "$type": "dimension", "$description": "10x base unit" },
+  "12": { "$value": "48px", "$type": "dimension", "$description": "12x base unit" },
+  "16": { "$value": "64px", "$type": "dimension", "$description": "16x base unit" },
+  "20": { "$value": "80px", "$type": "dimension", "$description": "20x base unit" },
+  "24": { "$value": "96px", "$type": "dimension", "$description": "24x base unit" }
+}

@@ -1,0 +1,23 @@
+{
+  "$description": "Focus treatment semantics. Ring colors, widths, and offsets for accessibility.",
+  "ring": {
+    "color": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Focus ring color" },
+    "width": { "$value": "{core.border.width.2}", "$type": "strokeWidth", "$description": "Focus ring width" },
+    "offset": { "$value": "{core.spacing.1}", "$type": "dimension", "$description": "Focus ring offset" }
+  },
+  "outline": {
+    "color": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Focus outline color" },
+    "width": { "$value": "{core.border.width.2}", "$type": "strokeWidth", "$description": "Focus outline width" },
+    "style": { "$value": "{core.border.style.solid}", "$type": "strokeStyle", "$description": "Focus outline style" }
+  },
+  "visible": {
+    "color": { "$value": "{semantic.color.interactive.primary}", "$type": "color", "$description": "Visible focus color" },
+    "background": { "$value": "{semantic.surface.focus}", "$type": "color", "$description": "Visible focus background" },
+    "offset": { "$value": "{core.spacing.0_5}", "$type": "dimension", "$description": "Visible focus offset" }
+  },
+  "highContrast": {
+    "color": { "$value": "{core.color.black}", "$type": "color", "$description": "High contrast focus color" },
+    "width": { "$value": "{core.border.width.4}", "$type": "strokeWidth", "$description": "High contrast focus width" },
+    "offset": { "$value": "{core.spacing.1}", "$type": "dimension", "$description": "High contrast focus offset" }
+  }
+}

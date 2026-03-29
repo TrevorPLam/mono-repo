@@ -1,0 +1,35 @@
+{
+  "$description": "Semantic surfaces/backgrounds. Maps primitive colors to meaningful surface layers.",
+  "canvas": {
+    "primary": { "$value": "{core.color.white}", "$type": "color", "$description": "Main canvas background" },
+    "secondary": { "$value": "{core.color.gray.50}", "$type": "color", "$description": "Secondary canvas background" },
+    "tertiary": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Tertiary canvas background" }
+  },
+  "subtle": {
+    "primary": { "$value": "{core.color.gray.50}", "$type": "color", "$description": "Subtle background for grouped content" },
+    "secondary": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Secondary subtle background" },
+    "accent": { "$value": "{core.color.blue.50}", "$type": "color", "$description": "Accent subtle background" }
+  },
+  "elevated": {
+    "primary": { "$value": "{core.color.white}", "$type": "color", "$description": "Elevated surface background" },
+    "secondary": { "$value": "{core.color.gray.50}", "$type": "color", "$description": "Secondary elevated surface" },
+    "overlay": { "$value": "{core.color.gray.50}", "$type": "color", "$description": "Overlay surface background" }
+  },
+  "inverse": {
+    "primary": { "$value": "{core.color.gray.900}", "$type": "color", "$description": "Inverse surface for dark contexts" },
+    "secondary": { "$value": "{core.color.gray.800}", "$type": "color", "$description": "Secondary inverse surface" },
+    "accent": { "$value": "{core.color.blue.900}", "$type": "color", "$description": "Accent inverse surface" }
+  },
+  "interactive": {
+    "hover": { "$value": "{core.color.gray.100}", "$type": "color", "$description": "Interactive hover background" },
+    "active": { "$value": "{core.color.gray.200}", "$type": "color", "$description": "Interactive active background" },
+    "focus": { "$value": "{core.color.blue.100}", "$type": "color", "$description": "Interactive focus background" },
+    "selected": { "$value": "{core.color.blue.100}", "$type": "color", "$description": "Selected state background" }
+  },
+  "status": {
+    "success": { "$value": "{semantic.color.success.light}", "$type": "color", "$description": "Success status background" },
+    "warning": { "$value": "{semantic.color.warning.light}", "$type": "color", "$description": "Warning status background" },
+    "danger": { "$value": "{semantic.color.danger.light}", "$type": "color", "$description": "Danger status background" },
+    "info": { "$value": "{semantic.color.info.light}", "$type": "color", "$description": "Info status background" }
+  }
+}

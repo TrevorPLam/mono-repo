@@ -1,0 +1,44 @@
+{
+  "$description": "Shared card contract tokens. System-level card component specifications.",
+  "padding": {
+    "sm": { "$value": "{core.spacing.4}", "$type": "dimension", "$description": "Small card padding" },
+    "base": { "$value": "{core.spacing.6}", "$type": "dimension", "$description": "Base card padding" },
+    "lg": { "$value": "{core.spacing.8}", "$type": "dimension", "$description": "Large card padding" },
+    "xl": { "$value": "{core.spacing.10}", "$type": "dimension", "$description": "Extra large card padding" }
+  },
+  "radius": {
+    "sm": { "$value": "{core.radius.base}", "$type": "dimension", "$description": "Small card border radius" },
+    "base": { "$value": "{core.radius.lg}", "$type": "dimension", "$description": "Base card border radius" },
+    "lg": { "$value": "{core.radius.xl}", "$type": "dimension", "$description": "Large card border radius" }
+  },
+  "border": {
+    "width": {
+      "sm": { "$value": "{core.border.width.1}", "$type": "strokeWidth", "$description": "Small card border width" },
+      "base": { "$value": "{core.border.width.1}", "$type": "strokeWidth", "$description": "Base card border width" },
+      "lg": { "$value": "{core.border.width.1}", "$type": "strokeWidth", "$description": "Large card border width" }
+    },
+    "style": {
+      "sm": { "$value": "{core.border.style.solid}", "$type": "strokeStyle", "$description": "Small card border style" },
+      "base": { "$value": "{core.border.style.solid}", "$type": "strokeStyle", "$description": "Base card border style" },
+      "lg": { "$value": "{core.border.style.solid}", "$type": "strokeStyle", "$description": "Large card border style" }
+    }
+  },
+  "shadow": {
+    "resting": { "$value": "{semantic.elevation.card.base}", "$type": "shadow", "$description": "Card resting elevation" },
+    "hover": { "$value": "{semantic.elevation.card.hover}", "$type": "shadow", "$description": "Card hover elevation" },
+    "interactive": { "$value": "{semantic.elevation.card.interactive}", "$type": "shadow", "$description": "Interactive card elevation" }
+  },
+  "surface": {
+    "background": { "$value": "{semantic.surface.canvas.primary}", "$type": "color", "$description": "Card surface background" },
+    "border": { "$value": "{semantic.border.primary}", "$type": "color", "$description": "Card surface border color" }
+  },
+  "transition": {
+    "duration": { "$value": "{semantic.motion.standard.duration}", "$type": "duration", "$description": "Card transition duration" },
+    "easing": { "$value": "{semantic.motion.standard.easing}", "$type": "cubicBezier", "$description": "Card transition easing" }
+  },
+  "gap": {
+    "sm": { "$value": "{core.spacing.3}", "$type": "dimension", "$description": "Small card internal gap" },
+    "base": { "$value": "{core.spacing.4}", "$type": "dimension", "$description": "Base card internal gap" },
+    "lg": { "$value": "{core.spacing.6}", "$type": "dimension", "$description": "Large card internal gap" }
+  }
+}
